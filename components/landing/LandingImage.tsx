@@ -1,27 +1,21 @@
-// import desk from "../../public/desk3.png";
-import desk from "../../public/desk2.jpg";
 import { DeveloperTyped } from "./DeveloperTyped";
 import { useState } from "react";
 import Image from "next/Image";
-import { Box } from "@chakra-ui/react";
+import { Box, useBreakpointValue } from "@chakra-ui/react";
 
-export const ScrollIcon = () => (
-  <a href="#about-me">
-    <div className="chevron"></div>
-    <div className="chevron"></div>
-    <div className="chevron"></div>
-  </a>
-);
 export const LandingImage = () => {
   const [startTyping, setStartTyping] = useState(false);
 
   const finishLoading = () => {
     setStartTyping(true);
   };
+
+  const top = useBreakpointValue({ base: "20%", md: "35%" });
+
   return (
-    <Box sx={{width: '100%', height: '95vh', position: 'relative'}}>
+    <Box sx={{ width: "100%", height: "95vh", position: "fixed" }}>
       <Image
-      layout="fill"
+        layout="fill"
         objectFit="cover"
         style={{ opacity: "80%" }}
         src="/desk2.jpg"
@@ -31,9 +25,9 @@ export const LandingImage = () => {
       {startTyping ? (
         <Box
           style={{
+            top,
             position: "absolute",
             color: "white",
-            top: "40%",
             left: "50%",
             transform: "translateX(-50%)",
           }}
@@ -46,5 +40,3 @@ export const LandingImage = () => {
     </Box>
   );
 };
-
-export default LandingImage;
