@@ -14,6 +14,7 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { DesktopNav } from "./NavigationDesktop";
 import { MobileNav } from "./NavigationMobile";
 import { navbarTitle } from "../../content";
+import { ColorModeToggle } from "../providers/ColorModeToggle";
 
 const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure();
@@ -66,6 +67,8 @@ const Navbar = () => {
             <DesktopNav />
           </Flex>
         </Flex>
+
+        <ColorModeToggle />
       </Flex>
 
       <Collapse in={isOpen} animateOpacity>
