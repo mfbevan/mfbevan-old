@@ -1,4 +1,4 @@
-import { Box, Center, Heading, Text } from "@chakra-ui/react";
+import { Box, Center, useColorModeValue, Text } from "@chakra-ui/react";
 
 const AboutMeCard = () => (
   <Center py={2}>
@@ -9,9 +9,14 @@ const AboutMeCard = () => (
       rounded="md"
       textAlign="left"
       mx={2}
+      bg={useColorModeValue("white", "gray.700")}
     >
       <Box>
-        <Text fontSize="sm" color="gray.500" p={6}>
+        <Text
+          fontSize="sm"
+          color={useColorModeValue("gray.700", "white")}
+          p={6}
+        >
           My names is Matthew. I am a software developer with a passion for
           programming and problem solving. After completing a Bachelor of
           Computer Science, I jumped at the chance to kickstart my professional

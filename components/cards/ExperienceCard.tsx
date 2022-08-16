@@ -18,7 +18,7 @@ const ExperienceCard = ({ experience }: { experience: IExperience }) => {
       <Box
         maxW="2xl"
         w="full"
-        bg={useColorModeValue("white", "gray.800")}
+        bg={useColorModeValue("white", "gray.700")}
         boxShadow="xl"
         rounded="md"
         textAlign="left"
@@ -29,7 +29,7 @@ const ExperienceCard = ({ experience }: { experience: IExperience }) => {
             <Heading fontSize="xl" fontWeight={500} fontFamily="body">
               {title}
             </Heading>
-            <Text fontSize="sm" color="gray.500">
+            <Text fontSize="sm" color={useColorModeValue("gray.500", "gray.400")}>
               {subtitle}
             </Text>
             {icons.length ? (
@@ -39,7 +39,7 @@ const ExperienceCard = ({ experience }: { experience: IExperience }) => {
                 ))}
               </Wrap>
             ): <Box py={2} />}
-            <Text fontSize="sm" color="gray.500">
+            <Text fontSize="sm" color={useColorModeValue("gray.700", "gray.200")}>
               {desc}
             </Text>
           </Stack>

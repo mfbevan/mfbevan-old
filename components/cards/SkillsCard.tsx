@@ -7,25 +7,55 @@ import {
   useColorModeValue,
   Wrap,
   WrapItem,
+  UnorderedList,
+  ListItem,
 } from "@chakra-ui/react";
-import { ReactNode } from "react";
-import { IExperience, languages, operatingSystems, toolsServices } from "../../content";
+import { languages, operatingSystems, toolsServices } from "../../content";
 
 const SkillsCard = () => {
-
   return (
     <Center>
       <Box
         maxW="2xl"
         w="full"
-        bg={useColorModeValue("white", "gray.800")}
+        bg={useColorModeValue("white", "gray.700")}
         boxShadow="xl"
         rounded="md"
         textAlign="left"
         mx={2}
+        color={useColorModeValue("gray.700", "gray.300")}
       >
         <Box p={6}>
           <Stack spacing={0} align="left">
+            <Heading fontSize="lg" fontWeight={500} fontFamily="body">
+              Soft Skills
+            </Heading>
+            <UnorderedList p={4}>
+              <ListItem>Management experience</ListItem>
+              <ListItem>
+                Excellent written and verbal communication skills
+              </ListItem>
+              <ListItem>Highly motivated with a positive attitude</ListItem>
+              <ListItem>Attention to detail</ListItem>
+              <ListItem>Highly reliable with a great work ethic</ListItem>
+              <ListItem>High personal standards</ListItem>
+            </UnorderedList>
+            <Heading fontSize="lg" fontWeight={500} fontFamily="body">
+              Hard Skills
+            </Heading>
+            <Text py={4}>
+              Highly proficient in Node & Typescript for creating front and
+              backend services and deploying them to the cloud through AWS, GCP
+              and Vercel. I have particular experience in RESTful API
+              development and AWS ECS workers for fast, scalable
+              infrastructure.
+            </Text>
+            <Text pb={4}>
+              In blockchain development I am able to implement, test and deploy Solidity
+              Smart Contracts for the Ethereum EVM, with testing and contract
+              interaction implemented using Hardhat and ethers.js.
+            </Text>
+
             <Heading fontSize="lg" fontWeight={500} fontFamily="body">
               Languages
             </Heading>

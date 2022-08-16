@@ -23,9 +23,19 @@ export const navItems: Array<INavItem> = [
         href: "experience",
       },
       {
-        label: "Skills & Projects",
+        label: "Skills",
         subLabel: "Programming & management skills",
         href: "skills",
+      },
+    ],
+  },
+  {
+    label: "Projects",
+    children: [
+      {
+        label: "Personal Projects",
+        subLabel: "Coming soon...",
+        href: "#",
       },
     ],
   },
