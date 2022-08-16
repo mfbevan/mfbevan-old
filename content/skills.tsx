@@ -31,6 +31,7 @@ import {
   ChakraUILogo,
   KubernetesLogo,
   HardhatLogo,
+  VercelLogo,
 } from "../components";
 
 export const toolsServices: ReactNode[] = [
@@ -51,6 +52,7 @@ export const toolsServices: ReactNode[] = [
   <DockerLogo key="docker" />,
   <KubernetesLogo key="kubernetes" />,
   <CloudflareLogo key="cloudflare" />,
+  <VercelLogo key="vercel" />,
 ];
 
 export const languages: ReactNode[] = [

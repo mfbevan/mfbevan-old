@@ -520,10 +520,10 @@ export const ChakraUILogo = () => (
       />
     </Box>
   </Tooltip>
-)
+);
 
 export const HardhatLogo = () => (
-<Tooltip label="Hardhat">
+  <Tooltip label="Hardhat">
     <Box>
       <Image
         height={48}
@@ -533,4 +533,17 @@ export const HardhatLogo = () => (
       />
     </Box>
   </Tooltip>
-)
+);
+
+export const VercelLogo = () => (
+  <Tooltip label="Vercel">
+    <Box p={2}>
+      <Image
+        height={32}
+        width={32}
+        layout="fixed"
+        src="https://svgrepo.com/show/327408/logo-vercel.svg"
+      />
+    </Box>
+  </Tooltip>
+);

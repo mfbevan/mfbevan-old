@@ -9,9 +9,10 @@ const nextConfig = {
       "https://image.icons8.com",
       "https://img.icons8.com",
       "img.icons8.com",
-      "plugins.jetbrains.com"
-    ]
-  }
-}
+      "plugins.jetbrains.com",
+      "svgrepo.com",
+    ],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
