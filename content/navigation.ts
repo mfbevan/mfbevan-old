@@ -5,13 +5,11 @@ export interface INavItem {
   href?: string;
 }
 
-export const navbarTitle = "mfbevan.eth";
-
-export const socials = {
-  twitter: "mfbevan",
-  linkedIn: "mfbevan",
-  github: "mfbevan",
-};
+export const navbarTitle = "Matthew Bevan";
+export const rainbowMeLink = "https://rainbow.me/mfbevan.eth";
+export const twitterLink = "https://twitter.com/mfbevan";
+export const githubLink = "https://github.com/mfbevan";
+export const linkedInLink = "https://www.linkedin.com/in/mfbevan/"
 
 export const navItems: Array<INavItem> = [
   {

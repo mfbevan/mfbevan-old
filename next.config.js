@@ -12,6 +12,7 @@ const nextConfig = {
       "plugins.jetbrains.com",
       "svgrepo.com",
       "iconape.com",
+      "www.rainbowkit.com"
     ],
   },
 };

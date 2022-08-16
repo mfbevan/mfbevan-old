@@ -3,10 +3,8 @@ import {
   Flex,
   Text,
   IconButton,
-  Stack,
   Collapse,
   useColorModeValue,
-  useBreakpointValue,
   useDisclosure,
   Link,
 } from "@chakra-ui/react";
@@ -15,6 +13,7 @@ import { DesktopNav } from "./NavigationDesktop";
 import { MobileNav } from "./NavigationMobile";
 import { navbarTitle } from "../../content";
 import { ColorModeToggle } from "../providers/ColorModeToggle";
+import { Socials } from "./Socials";
 
 const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure();
@@ -26,17 +25,13 @@ const Navbar = () => {
         color={useColorModeValue("gray.600", "white")}
         minH={"60px"}
         py={{ base: 2 }}
-        px={{ base: 4 }}
+        px={{ base: 2 }}
         borderBottom={1}
         borderStyle={"solid"}
         borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
       >
-        <Flex
-          flex={{ base: 1, md: "auto" }}
-          ml={{ base: -2 }}
-          display={{ base: "flex", md: "none" }}
-        >
+        <Flex display={{ base: "flex", md: "none" }}>
           <IconButton
             onClick={onToggle}
             icon={
@@ -48,14 +43,14 @@ const Navbar = () => {
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
           <Text
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
+            ml={{ base: "2", md: "4" }}
+            textAlign="left"
             fontFamily={"heading"}
             color={useColorModeValue("gray.800", "white")}
             fontWeight="bold"
           >
             <Link
-              href={"https://rainbow.me/mfbevan.eth"}
-              target="_blank"
+              href={"/"}
               _hover={{
                 textDecoration: "none",
               }}
@@ -69,6 +64,7 @@ const Navbar = () => {
           </Flex>
         </Flex>
 
+        <Socials />
         <ColorModeToggle />
       </Flex>
 

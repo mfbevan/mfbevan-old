@@ -1,12 +1,13 @@
 import Typed from "react-typed";
 import { useState } from "react";
 import { Box, Heading } from "@chakra-ui/react";
+import { navbarTitle } from "../../content";
 
 const startDelay = 200;
 const typeSpeed = 45;
 const backSpeed = 20;
 const strings = ["Frontend", "Backend", "Blockchain", "Full Stack Developer"];
-const name = "Matthew Bevan";
+const name = navbarTitle;
 
 const developerTextDelay = 1100;
 
