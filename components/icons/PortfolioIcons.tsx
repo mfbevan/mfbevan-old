@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import { Box, Tooltip } from "@chakra-ui/react";
+import { Box, Tooltip, Link, Heading } from "@chakra-ui/react";
 import Image from "next/image";
 
 export const ReactLogo = () => (
@@ -548,7 +548,6 @@ export const VercelLogo = () => (
   </Tooltip>
 );
 
-
 export const NextLogo = () => (
   <Tooltip label="Next.js">
     <Box p={2}>
@@ -560,4 +559,33 @@ export const NextLogo = () => (
       />
     </Box>
   </Tooltip>
-)
+);
+
+export const ScuderiaLogo = () => (
+  <Tooltip label="Scuderia">
+    <Box>
+      <Link
+        key="scuderia"
+        href="https://scuderia.mfbevan.com"
+        target="_blank"
+        rel="noreferrer"
+        _hover={{ textDecoration: "none" }}
+      >
+        <Heading size="xl">🏎️</Heading>
+      </Link>
+    </Box>
+  </Tooltip>
+);
+
+export const PolygonLogo = () => (
+  <Tooltip label="Polygon">
+    <Box>
+      <Image
+        height={48}
+        width={48}
+        layout="fixed"
+        src="https://img.icons8.com/external-black-fill-lafs/344/external-Polygon-cryptocurrency-black-fill-lafs.png"
+      />
+    </Box>
+  </Tooltip>
+);

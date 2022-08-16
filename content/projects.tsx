@@ -1,39 +1,61 @@
+import { Heading, Link, Text } from "@chakra-ui/react";
 import { ReactNode } from "react";
 import {
   ReactLogo,
-  TypescriptLogo,
-  NodeLogo,
-  GitlabLogo,
-  JiraLogo,
   GithubLogo,
-  PostgresLogo,
-  AWSLogo,
-  MUILogo,
-  DockerLogo,
-  CloudflareLogo,
-  SolidityLogo,
-  TerraformLogo,
-  KubernetesLogo,
-  MongoDBLogo,
   ChakraUILogo,
-  PythonLogo,
-  MariaDbLogo,
   AndroidLogo,
   CSharpLogo,
   PlayStoreLogo,
   UnityLogo,
   VercelLogo,
   NextLogo,
+  ScuderiaLogo,
+  SolidityLogo,
+  HardhatLogo,
+  EthereumLogo,
+  PolygonLogo,
 } from "../components/icons/PortfolioIcons";
 
 export interface IProject {
   title: string;
   subtitle: string;
-  desc: string;
+  desc: ReactNode;
   icons: ReactNode[];
 }
 
 export const projects: IProject[] = [
+  {
+    title: "Scuderia",
+    subtitle: "Personal Development Project @ Labrys (2022)",
+    desc: (
+      <>
+        Scuderia is a fully on-chain racing NFT ecosystem that allows minting,
+        metadata and image generation, racing and betting, all running on
+        Polygon. Check it out at{" "}
+        <Link
+          href="https://scuderia.mfbevan.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          scuderia.mfbevan.com
+        </Link>{" "}
+        or click the 🏎️ above
+      </>
+    ),
+    icons: [
+      <ScuderiaLogo key="scuderia" />,
+      <NextLogo key="next" />,
+      <ReactLogo key="react" />,
+      <ChakraUILogo key="chakra" />,
+      <GithubLogo key="github" />,
+      <VercelLogo key="vercel" />,
+      <SolidityLogo key="solidity" />,
+      <HardhatLogo key="hardhat" />,
+      <EthereumLogo key="ethereum" />,
+      <PolygonLogo key="polygon" />,
+    ],
+  },
   {
     title: "Portfolio",
     subtitle: `What you're seeing right now!`,
@@ -46,7 +68,7 @@ export const projects: IProject[] = [
       <ReactLogo key="react" />,
       <ChakraUILogo key="chakra" />,
       <GithubLogo key="github" />,
-      <VercelLogo key="vercel" />
+      <VercelLogo key="vercel" />,
     ],
   },
   {
