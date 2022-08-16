@@ -14,9 +14,9 @@ const ExperienceCard = ({ experience }: { experience: IExperience }) => {
   const { title, subtitle, desc, icons } = experience;
 
   return (
-    <Center py={6}>
+    <Center py={2}>
       <Box
-        maxW="xl"
+        maxW="2xl"
         w="full"
         bg={useColorModeValue("white", "gray.800")}
         boxShadow="xl"
@@ -32,11 +32,13 @@ const ExperienceCard = ({ experience }: { experience: IExperience }) => {
             <Text fontSize="sm" color="gray.500">
               {subtitle}
             </Text>
-            <Wrap py={4}>
-              {icons.map((_icon) => (
-                <WrapItem key={_icon!.toString()}>{_icon}</WrapItem>
-              ))}
-            </Wrap>
+            {icons.length ? (
+              <Wrap py={4}>
+                {icons.map((_icon) => (
+                  <WrapItem key={_icon!.toString()}>{_icon}</WrapItem>
+                ))}
+              </Wrap>
+            ): <Box py={2} />}
             <Text fontSize="sm" color="gray.500">
               {desc}
             </Text>

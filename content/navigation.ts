@@ -18,9 +18,14 @@ export const navItems: Array<INavItem> = [
     label: "Experience",
     children: [
       {
-        label: "Experience",
-        subLabel: "Professional, educational and personal experience",
+        label: "Bio & Employment History",
+        subLabel: "Professional and Educational Background",
         href: "experience",
+      },
+      {
+        label: "Skills & Projects",
+        subLabel: "Programming & management skills",
+        href: "skills",
       },
     ],
   },

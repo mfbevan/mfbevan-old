@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import {
   GitlabLogo,
   JiraLogo,
@@ -26,26 +27,35 @@ import {
   WindowsLogo,
   MacOSLogo,
   LinuxLogo,
+  MongoDBLogo,
+  ChakraUILogo,
+  KubernetesLogo,
+  HardhatLogo,
 } from "../components";
 
-export const toolsServices = [
+export const toolsServices: ReactNode[] = [
   <GitlabLogo key="gitlab" />,
   <JiraLogo key="jira" />,
   <ConfluenceLogo key="confluence" />,
   <GithubLogo key="github" />,
   <PostgresLogo key="postgres" />,
+  <MariaDbLogo key="mariadb" />,
+  <MongoDBLogo key="mongodb" />,
   <AWSLogo key="aws" />,
   <AzureLogo key="azure" />,
   <MariaDbLogo key="mariadb" />,
   <UnityLogo key="unity" />,
   <AndroidLogo key="android" />,
   <MUILogo key="mui" />,
+  <ChakraUILogo key="chakra" />,
   <DockerLogo key="docker" />,
+  <KubernetesLogo key="kubernetes" />,
   <CloudflareLogo key="cloudflare" />,
 ];
 
-export const languages = [
+export const languages: ReactNode[] = [
   <SolidityLogo key="solidity" />,
+  <HardhatLogo key="hardhat" />,
   <ReactLogo key="react" />,
   <HTMLLogo key="html5" />,
   <CSSLogo key="css" />,
@@ -53,12 +63,11 @@ export const languages = [
   <TypescriptLogo key="typescript" />,
   <TerraformLogo key="terraform" />,
   <NodeLogo key="node" />,
-  <PythonLogo key="python" />,
   <CSharpLogo key="c#" />,
   <MatlabLogo key="matlab" />,
 ];
 
-export const operatingSystems = [
+export const operatingSystems: ReactNode[] = [
   <WindowsLogo key="windows" />,
   <MacOSLogo key="macos" />,
   <LinuxLogo key="linux" />,

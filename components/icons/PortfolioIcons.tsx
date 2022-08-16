@@ -495,3 +495,42 @@ export const KubernetesLogo = () => (
     </Box>
   </Tooltip>
 );
+
+export const MongoDBLogo = () => (
+  <Tooltip label="MongoDB">
+    <Box>
+      <Image
+        height={48}
+        width={48}
+        layout="fixed"
+        src="https://img.icons8.com/color/288/mongodb.png"
+      />
+    </Box>
+  </Tooltip>
+);
+
+export const ChakraUILogo = () => (
+  <Tooltip label="ChakraUI">
+    <Box>
+      <Image
+        height={48}
+        width={48}
+        layout="fixed"
+        src="https://img.icons8.com/color/288/chakra-ui.png"
+      />
+    </Box>
+  </Tooltip>
+)
+
+export const HardhatLogo = () => (
+<Tooltip label="Hardhat">
+    <Box>
+      <Image
+        height={48}
+        width={48}
+        layout="fixed"
+        src="https://plugins.jetbrains.com/files/18551/202687/icon/pluginIcon.png"
+      />
+    </Box>
+  </Tooltip>
+)
