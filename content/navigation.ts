@@ -20,7 +20,7 @@ export const navItems: Array<INavItem> = [
       {
         label: "Experience",
         subLabel: "Professional, educational and personal experience",
-        href: "resume",
+        href: "experience",
       },
     ],
   },

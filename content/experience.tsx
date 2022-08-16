@@ -14,6 +14,7 @@ import {
   CloudflareLogo,
   SolidityLogo,
   TerraformLogo,
+  KubernetesLogo,
 } from "../components/icons/PortfolioIcons";
 
 export interface IExperience {
@@ -37,6 +38,7 @@ export const experiences: IExperience[] = [
       <GithubLogo key="github" />,
       <GitlabLogo key="gitlab" />,
       <JiraLogo key="jira" />,
+      <KubernetesLogo key="kubernetes" />,
     ],
   },
   {
