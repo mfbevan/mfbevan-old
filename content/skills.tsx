@@ -7,7 +7,6 @@ import {
   PostgresLogo,
   AWSLogo,
   AzureLogo,
-  MariaDbLogo,
   UnityLogo,
   AndroidLogo,
   MUILogo,
@@ -21,7 +20,6 @@ import {
   TypescriptLogo,
   TerraformLogo,
   NodeLogo,
-  PythonLogo,
   CSharpLogo,
   MatlabLogo,
   WindowsLogo,
@@ -33,6 +31,7 @@ import {
   HardhatLogo,
   VercelLogo,
   NextLogo,
+  MariaDbLogo,
 } from "../components";
 
 export const toolsServices: ReactNode[] = [
@@ -42,7 +41,6 @@ export const toolsServices: ReactNode[] = [
   <GithubLogo key="github" />,
   <AWSLogo key="aws" />,
   <AzureLogo key="azure" />,
-  <MariaDbLogo key="mariadb" />,
   <UnityLogo key="unity" />,
   <AndroidLogo key="android" />,
   <DockerLogo key="docker" />,
@@ -68,6 +66,7 @@ export const languages: ReactNode[] = [
   <MatlabLogo key="matlab" />,
   <PostgresLogo key="postgres" />,
   <MongoDBLogo key="mongodb" />,
+  <MariaDbLogo key="mongodb" />,
 ];
 
 export const operatingSystems: ReactNode[] = [
