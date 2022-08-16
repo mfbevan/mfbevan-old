@@ -5,7 +5,7 @@ export interface INavItem {
   href?: string;
 }
 
-export const navbarTitle = "Matthew Bevan";
+export const navbarTitle = "mfbevan.eth";
 
 export const socials = {
   twitter: "mfbevan",

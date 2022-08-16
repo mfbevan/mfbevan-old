@@ -54,7 +54,8 @@ const Navbar = () => {
             fontWeight="bold"
           >
             <Link
-              href={"/"}
+              href={"https://rainbow.me/mfbevan.eth"}
+              target="_blank"
               _hover={{
                 textDecoration: "none",
               }}
