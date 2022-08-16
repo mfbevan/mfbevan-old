@@ -11,6 +11,7 @@ const nextConfig = {
       "img.icons8.com",
       "plugins.jetbrains.com",
       "svgrepo.com",
+      "iconape.com",
     ],
   },
 };

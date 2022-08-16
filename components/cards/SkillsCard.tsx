@@ -75,7 +75,7 @@ const SkillsCard = () => {
             <Heading fontSize="lg" fontWeight={500} fontFamily="body">
               Operating Systems
             </Heading>
-            <Wrap p={4}>
+            <Wrap py={4}>
               {operatingSystems.map((_icon) => (
                 <WrapItem key={_icon!.toString()}>{_icon}</WrapItem>
               ))}

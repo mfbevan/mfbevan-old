@@ -547,3 +547,17 @@ export const VercelLogo = () => (
     </Box>
   </Tooltip>
 );
+
+
+export const NextLogo = () => (
+  <Tooltip label="Next.js">
+    <Box p={2}>
+      <Image
+        height={32}
+        width={32}
+        layout="fixed"
+        src="https://iconape.com/wp-content/files/gm/82643/svg/next-js.svg"
+      />
+    </Box>
+  </Tooltip>
+)

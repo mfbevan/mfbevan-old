@@ -18,6 +18,10 @@ import {
   ChakraUILogo,
   PythonLogo,
   MariaDbLogo,
+  NextLogo,
+  VercelLogo,
+  EthereumLogo,
+  ConfluenceLogo,
 } from "../components/icons/PortfolioIcons";
 
 export interface IExperience {
@@ -31,19 +35,24 @@ export const experiences: IExperience[] = [
   {
     title: "Labrys",
     subtitle: "Full-Stack Blockchain Engineer (March 2022 - NOW)",
-    desc: `At Labrys I work as a Full Stack Software Developer, tackling problems in both the Web 2.0 and Web 3.0 world, 
+    desc: `At Labrys I work as a Full Stack Engineer, tackling problems in both the Web 2.0 and Web 3.0 world, 
     building web applications and smart contracts alongside some of the best developers in the crypto space today.`,
     icons: [
       <SolidityLogo key="solidity" />,
+      <EthereumLogo key="ethereum" />,
       <ReactLogo key="react" />,
       <TypescriptLogo key="typescript" />,
       <NodeLogo key="node" />,
       <GithubLogo key="github" />,
       <GitlabLogo key="gitlab" />,
       <JiraLogo key="jira" />,
+      <ConfluenceLogo key="confluence" />,
       <KubernetesLogo key="kubernetes" />,
       <MongoDBLogo key="mongodb" />,
+      <MUILogo key="mui" />,
       <ChakraUILogo key="chakra" />,
+      <NextLogo key="next" />,
+      <VercelLogo key="vercel" />,
     ],
   },
   {

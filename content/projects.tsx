@@ -23,6 +23,7 @@ import {
   PlayStoreLogo,
   UnityLogo,
   VercelLogo,
+  NextLogo,
 } from "../components/icons/PortfolioIcons";
 
 export interface IProject {
@@ -41,6 +42,7 @@ export const projects: IProject[] = [
     Try out Dark Mode in the Navbar!
     The icons on this page are from Icons8.com`,
     icons: [
+      <NextLogo key="next" />,
       <ReactLogo key="react" />,
       <ChakraUILogo key="chakra" />,
       <GithubLogo key="github" />,

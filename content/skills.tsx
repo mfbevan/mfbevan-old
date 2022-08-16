@@ -32,6 +32,7 @@ import {
   KubernetesLogo,
   HardhatLogo,
   VercelLogo,
+  NextLogo,
 } from "../components";
 
 export const toolsServices: ReactNode[] = [
@@ -39,16 +40,11 @@ export const toolsServices: ReactNode[] = [
   <JiraLogo key="jira" />,
   <ConfluenceLogo key="confluence" />,
   <GithubLogo key="github" />,
-  <PostgresLogo key="postgres" />,
-  <MariaDbLogo key="mariadb" />,
-  <MongoDBLogo key="mongodb" />,
   <AWSLogo key="aws" />,
   <AzureLogo key="azure" />,
   <MariaDbLogo key="mariadb" />,
   <UnityLogo key="unity" />,
   <AndroidLogo key="android" />,
-  <MUILogo key="mui" />,
-  <ChakraUILogo key="chakra" />,
   <DockerLogo key="docker" />,
   <KubernetesLogo key="kubernetes" />,
   <CloudflareLogo key="cloudflare" />,
@@ -63,10 +59,15 @@ export const languages: ReactNode[] = [
   <CSSLogo key="css" />,
   <JavascriptLogo key="javascript" />,
   <TypescriptLogo key="typescript" />,
+  <NextLogo key="next" />,
+  <MUILogo key="mui" />,
+  <ChakraUILogo key="chakra" />,
   <TerraformLogo key="terraform" />,
   <NodeLogo key="node" />,
   <CSharpLogo key="c#" />,
   <MatlabLogo key="matlab" />,
+  <PostgresLogo key="postgres" />,
+  <MongoDBLogo key="mongodb" />,
 ];
 
 export const operatingSystems: ReactNode[] = [
