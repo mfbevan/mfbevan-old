@@ -1,4 +1,4 @@
-import { Center, Heading, VStack } from "@chakra-ui/react"
+import { Center, Heading, Spinner, VStack } from "@chakra-ui/react"
 import type { NextPage } from "next"
 import { useRouter } from "next/router"
 import { Markdown, PostNotFound, BlogPost } from "../../../components/blog"
@@ -10,7 +10,11 @@ const BlogPostPage: NextPage = () => {
   const { postId } = router.query
 
   if (!postId) {
-    return <PostNotFound />
+    return (
+      <Center p={10}>
+        <Spinner />
+      </Center>
+    )
   }
 
   const postData = personalPosts[postId as string]
@@ -33,7 +37,7 @@ const BlogPostPage: NextPage = () => {
         </VStack>
       </Center>
       <BlogPost>
-      <Post components={Markdown} />
+        <Post components={Markdown} />
       </BlogPost>
     </>
   )

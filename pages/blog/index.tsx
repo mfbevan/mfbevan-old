@@ -1,8 +1,13 @@
-import { Center, Heading } from "@chakra-ui/react"
+import { Center, Heading, VStack } from "@chakra-ui/react"
 import type { NextPage } from "next"
+import { BlogPostSummary } from "../../components/blog"
 import { personalPosts } from "../../content/blog/personal"
 
 const Experience: NextPage = () => {
+  const postKeys = Object.keys(personalPosts).reverse()
+  const allPosts = postKeys.map((_key) => personalPosts[_key])
+
+  console.log(allPosts)
   return (
     <>
       <Center py={4}>
@@ -10,7 +15,13 @@ const Experience: NextPage = () => {
           Personal Blog
         </Heading>
       </Center>
-      <Center>{`This is the personal blogging space :)`}</Center>
+      <Center>
+        <VStack>
+          {allPosts.map((_post, index) => (
+            <BlogPostSummary key={postKeys[index]} postKey={postKeys[index]} post={_post} />
+          ))}
+        </VStack>
+      </Center>
     </>
   )
 }
