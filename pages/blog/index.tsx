@@ -7,7 +7,6 @@ const Experience: NextPage = () => {
   const postKeys = Object.keys(personalPosts).reverse()
   const allPosts = postKeys.map((_key) => personalPosts[_key])
 
-  console.log(allPosts)
   return (
     <>
       <Center py={4}>

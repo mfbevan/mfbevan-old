@@ -6,7 +6,7 @@ export const PostNotFound = () => (
       <VStack>
       <Box>
         <Heading fontSize="lg" color={useColorModeValue("gray.700", "white")} p={6}>
-          This is not the post you're looking for
+          {`This is not the post you're looking for`}
         </Heading>
       </Box>
       <TbRobotOff size="50" />
