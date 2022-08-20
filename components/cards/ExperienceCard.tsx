@@ -8,7 +8,7 @@ import {
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
-import { IExperience, IProject } from "../../content";
+import { IExperience, IProject } from "../../content/portfolio";
 
 const ExperienceCard = ({ experience }: { experience: IExperience | IProject }) => {
   const { title, subtitle, desc, icons } = experience;

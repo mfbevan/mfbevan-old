@@ -11,7 +11,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
-import { INavItem, navItems } from "../../content/navigation";
+import { INavItem, navItems } from "../../content/portfolio";
 
 export const DesktopNav = () => {
   const linkColor = useColorModeValue("gray.600", "gray.200");

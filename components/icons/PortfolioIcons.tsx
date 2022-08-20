@@ -2,7 +2,7 @@
 import { Box, Tooltip, Link, Heading } from "@chakra-ui/react";
 import Image from "next/image";
 import { BsTwitter } from "react-icons/bs";
-import { githubLink, linkedInLink, rainbowMeLink, twitterLink } from "../../content/navigation";
+import { githubLink, linkedInLink, rainbowMeLink, twitterLink } from "../../content/portfolio";
 
 export const ReactLogo = () => (
   <Tooltip label="React" key="React">

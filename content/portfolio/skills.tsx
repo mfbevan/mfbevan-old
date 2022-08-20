@@ -32,7 +32,7 @@ import {
   VercelLogo,
   NextLogo,
   MariaDbLogo,
-} from "../components";
+} from "../../components";
 
 export const toolsServices: ReactNode[] = [
   <GitlabLogo key="gitlab" />,

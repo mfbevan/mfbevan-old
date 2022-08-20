@@ -2,7 +2,7 @@ import { Center, Heading } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import { AboutMeCard } from "../../components/cards/AboutMeCard";
 import { ExperienceCard } from "../../components/cards/ExperienceCard";
-import { education, experiences } from "../../content";
+import { education, experiences } from "../../content/portfolio";
 
 const Experience: NextPage = () => {
   return (
