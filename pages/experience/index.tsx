@@ -8,13 +8,13 @@ const Experience: NextPage = () => {
   return (
     <>
       <Center py={4}>
-        <Heading fontSize="2xl" fontWeight={500} fontFamily="body">
+        <Heading fontSize="2xl" fontWeight={500}>
           About Me
         </Heading>
       </Center>
       <AboutMeCard />
       <Center py={4}>
-        <Heading fontSize="2xl" fontWeight={500} fontFamily="body">
+        <Heading fontSize="2xl" fontWeight={500}>
           Employment History
         </Heading>
       </Center>
@@ -22,7 +22,7 @@ const Experience: NextPage = () => {
         <ExperienceCard key={_exp.title} experience={_exp} />
       ))}
       <Center py={4}>
-        <Heading fontSize="2xl" fontWeight={500} fontFamily="body">
+        <Heading fontSize="2xl" fontWeight={500}>
           Education
         </Heading>
       </Center>

@@ -43,7 +43,7 @@ export const navItems: Array<INavItem> = [
       {
         label: "Development Blog",
         subLabel: "Coming soon...",
-        href: "#",
+        href: "/blog"
       },
     ],
   },

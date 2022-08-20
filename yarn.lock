@@ -825,6 +825,16 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@fontsource/merriweather@^4.5.13":
+  version "4.5.13"
+  resolved "https://registry.yarnpkg.com/@fontsource/merriweather/-/merriweather-4.5.13.tgz#7b4ac15116091ed5bc1e64dc8ec80e96ed22b38f"
+  integrity sha512-VYPWyVtPvW8S4gGxWE+PdkVHNr44456Gkm49mD4qXmP8Zs2dPU8YG8an8KBIqHcPI6H74iGyll2+AohmGApkxw==
+
+"@fontsource/montserrat@^4.5.12":
+  version "4.5.12"
+  resolved "https://registry.yarnpkg.com/@fontsource/montserrat/-/montserrat-4.5.12.tgz#465c61fb508f6d0055dbcbfbc6eb7307a81fdf6f"
+  integrity sha512-UQ+4ijm1sddIBtmEZ9bKgCB1rSi4Imog0YKz7wDLtMQ3Mw2ZaBseTgoLDfbWnfdowS0PLp+Z4T2KZ/1AySTlDQ==
+
 "@humanwhocodes/config-array@^0.10.4":
   version "0.10.4"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.10.4.tgz#01e7366e57d2ad104feea63e72248f22015c520c"

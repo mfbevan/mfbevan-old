@@ -1,5 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+
+const withMDX = require('@next/mdx')({
+  extension: /\.(md|mdx)$/,
+})
+
+const nextConfig = withMDX({
   reactStrictMode: true,
   swcMinify: true,
   images: {
@@ -15,6 +20,7 @@ const nextConfig = {
       "www.rainbowkit.com"
     ],
   },
-};
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
+});
 
 module.exports = nextConfig;

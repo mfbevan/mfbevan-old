@@ -7,7 +7,7 @@ const Experience: NextPage = () => {
   return (
     <>
       <Center py={4}>
-        <Heading fontSize="2xl" fontWeight={500} fontFamily="body">
+        <Heading fontSize="2xl" fontWeight={500}>
           Projects
         </Heading>
       </Center>
