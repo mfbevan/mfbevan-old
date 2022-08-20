@@ -17,7 +17,7 @@ const AboutMeCard = () => (
           color={useColorModeValue("gray.700", "white")}
           p={6}
         >
-          My names is Matthew. I am a software developer with a passion for
+          My name is Matthew. I am a software developer with a passion for
           programming and problem solving. After completing a Bachelor of
           Computer Science, I jumped at the chance to kickstart my professional
           career as a Full Stack Developer working on enterprise email
