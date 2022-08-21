@@ -9,7 +9,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
-import { INavItem, navItems } from "../../content/navigation";
+import { INavItem, navItems } from "../../content/portfolio";
 
 export const MobileNav = () => {
   return (

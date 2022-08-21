@@ -1,7 +1,7 @@
 import Typed from "react-typed";
 import { useState } from "react";
 import { Box, Heading } from "@chakra-ui/react";
-import { navbarTitle } from "../../content";
+import { navbarTitle } from "../../content/portfolio";
 
 const startDelay = 200;
 const typeSpeed = 45;

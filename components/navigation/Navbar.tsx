@@ -11,7 +11,7 @@ import {
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { DesktopNav } from "./NavigationDesktop";
 import { MobileNav } from "./NavigationMobile";
-import { navbarTitle } from "../../content";
+import { navbarTitle } from "../../content/portfolio";
 import { ColorModeToggle } from "../providers/ColorModeToggle";
 import { Socials } from "./Socials";
 

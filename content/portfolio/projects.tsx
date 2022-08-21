@@ -1,4 +1,4 @@
-import { Heading, Link, Text } from "@chakra-ui/react";
+import { Link } from "@chakra-ui/react";
 import { ReactNode } from "react";
 import {
   ReactLogo,
@@ -15,7 +15,7 @@ import {
   HardhatLogo,
   EthereumLogo,
   PolygonLogo,
-} from "../components/icons/PortfolioIcons";
+} from "../../components/icons/PortfolioIcons";
 
 export interface IProject {
   title: string;

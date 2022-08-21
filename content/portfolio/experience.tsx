@@ -22,7 +22,7 @@ import {
   VercelLogo,
   EthereumLogo,
   ConfluenceLogo,
-} from "../components/icons/PortfolioIcons";
+} from "../../components/icons/PortfolioIcons";
 
 export interface IExperience {
   title: string;

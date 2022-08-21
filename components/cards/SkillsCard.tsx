@@ -10,11 +10,11 @@ import {
   UnorderedList,
   ListItem,
 } from "@chakra-ui/react";
-import { languages, operatingSystems, toolsServices } from "../../content";
+import { languages, operatingSystems, toolsServices } from "../../content/portfolio";
 
 const SkillsCard = () => {
   return (
-    <Center>
+    <Center py={2}>
       <Box
         maxW="2xl"
         w="full"
