@@ -15,7 +15,7 @@ export const personalPosts: Record<string, IPost> = {
   "20220821": {
     name: "mfbevan.eth",
     date: new Date("21 Aug 2022"),
-    summary: "Bachelors to Blockchain",
+    summary: "A bit about me, and how I got here.",
     post: Post20220821,
     Icon: FaEthereum,
   },
