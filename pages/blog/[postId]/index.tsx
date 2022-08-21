@@ -26,16 +26,14 @@ const BlogPostPage: NextPage = () => {
 
   return (
     <>
-      <Center py={4}>
-        <VStack>
-          <Heading fontSize="2xl" fontWeight={500}>
-            {postData.name}
-          </Heading>
-          <Heading fontSize="sm" fontWeight={500}>
-            {postData.date.toDateString()}
-          </Heading>
-        </VStack>
-      </Center>
+      <VStack pt={4}>
+        <Heading fontSize="4xl" textAlign="left">
+          {postData.name}
+        </Heading>
+        <Heading fontSize="sm" fontWeight={500}>
+          {postData.date.toDateString()}
+        </Heading>
+      </VStack>
       <BlogPost>
         <Post components={Markdown} />
       </BlogPost>

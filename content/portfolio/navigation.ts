@@ -42,7 +42,7 @@ export const navItems: Array<INavItem> = [
     children: [
       {
         label: "Development Blog",
-        subLabel: "Coming soon...",
+        subLabel: "Sharing thoughts & things",
         href: "/blog"
       },
     ],
