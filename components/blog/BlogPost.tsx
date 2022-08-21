@@ -5,7 +5,6 @@ const BlogPost = ({ children }: { children: ReactNode }) => (
   <Center py={2}>
     <Box
       w={useBreakpoint()}
-      boxShadow="xl"
       rounded="md"
       textAlign="left"
       mx={2}

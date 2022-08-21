@@ -1,7 +1,12 @@
 /** @type {import('next').NextConfig} */
+const { remarkCodeHike } = require("@code-hike/mdx");
+const theme = require("shiki/themes/github-dark.json");
 
-const withMDX = require('@next/mdx')({
+const withMDX = require("@next/mdx")({
   extension: /\.(md|mdx)$/,
+  options: {
+    remarkPlugins: [[remarkCodeHike, { theme, lineNumbers: false }]],
+  },
 })
 
 const nextConfig = withMDX({
@@ -17,10 +22,10 @@ const nextConfig = withMDX({
       "plugins.jetbrains.com",
       "svgrepo.com",
       "iconape.com",
-      "www.rainbowkit.com"
+      "www.rainbowkit.com",
     ],
   },
-  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
-});
+  pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
+})
 
-module.exports = nextConfig;
+module.exports = nextConfig

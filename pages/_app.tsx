@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import "@code-hike/mdx/dist/index.css"
 import "@fontsource/merriweather"
 import "@fontsource/montserrat"
 import type { AppProps } from "next/app";
