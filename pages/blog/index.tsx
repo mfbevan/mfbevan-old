@@ -11,7 +11,7 @@ const Experience: NextPage = () => {
     <>
       <Center py={4}>
         <Heading fontSize="2xl" fontWeight={500}>
-          Personal Blog
+          Development Blog
         </Heading>
       </Center>
       <Center>
