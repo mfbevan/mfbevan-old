@@ -1,0 +1,50 @@
+
+*"Mathematics is the simple bit, it's the stuff we can understand. It's cats that are complicated."* - John Horton Conway
+
+## Life
+
+In 1970, John Horton Conway devised the **Game of Life**. Life is a zero-player game; a simulation in which a set of initial conditions will be played out without the need for any human or sentient players. The game itself is infinite, set in a two-dimenstional grid of squares which we refer to as *cells*. Each cell is in one of two states: alive or dead. In each step of the game, each cell interacts with its neighbouring cells (in either horizontal, vertical, or diagonal direction). In each *tick* (or step) of the game, the new living state of a cell will be determined by the number of neighbours it has, giving us the *Rules for Life*
+
+* A cell with one or no neighbours will die (as if by solitude or underpopulation)
+* A cell with four or more neighbours will die (as if by overpopulation)
+* A cell with two or three neighbours will survive (to be a part of the next generation)
+* A dead cell with exactly three living neighbours will be brought to life (as if by reproduction)
+
+![](https://upload.wikimedia.org/wikipedia/commons/e/e5/Gospers_glider_gun.gif)
+You can play the game of life [here](https://playgameoflife.com/) or [here](https://conwaylife.com/), and see Conway's glider in action.
+
+### A Smart Contract Implementation
+
+Whilst the implementation of Conway's game is rather simple in its algorithmic complexity, the difficulty of a smart contract implementation is in *storage*. The cost of storing the current the state of each step of the Game of Life on chain would be unreasonable, so we instead take advantage of _`view`_ functions to see the current state of the game (more specifcally, we will use _`pure`_ functions to view the current game state, as this function will not edit the contract state). 
+
+Let's first define the requirements for such an implementation: 
+
+1. We want this to be sharable, so let's make it an ERC721 standard. You should be able to mint a Life token to your wallet that is different from any others in existence.
+2. Every token should be given a random initialisation
+3. The Game of Life will start on the block in which the token was minted
+4. Each consecutive block after mint will be one step in the game of life
+
+Let's define an interface with the ability to mint a new Game of Life token and view its state. The state of the game (for a given token) will be viewed as arrays of bits which we can use to form a grid. For the sake of this implementation, we will use a 64x64 grid.
+
+```solidity IGameOfLife.sol
+interface IGameOfLife {
+  function mint(address _receiver) external;
+}
+```
+
+and we can extend the interface that we have created, as well as the ERC721 standard from [OpenZeppelin](https://docs.openzeppelin.com/contracts/2.x/api/token/erc721)
+
+```solidity GameOfLife.sol
+contract GameOfLife is IGameOfLife, ERC721 {
+  // ...
+}
+```
+
+On-chain rondomizer -- we can just use pseudorandomise so feel free to game the contract to get exactly the outcome you want (good luck!)
+
+
+
+
+See you in the next one.
+
+*mfbevan*
