@@ -1,4 +1,6 @@
 
+# ---UNFINISHED---
+
 *"Mathematics is the simple bit, it's the stuff we can understand. It's cats that are complicated."* - John Horton Conway
 
 ## Life
@@ -7,7 +9,7 @@ In 1970, John Horton Conway devised the **Game of Life**. Life is a zero-player 
 
 * A cell with one or no neighbours will die (as if by solitude or underpopulation)
 * A cell with four or more neighbours will die (as if by overpopulation)
-* A cell with two or three neighbours will survive (to be a part of the next generation)
+* A cell with two neighbours will survive (to be a part of the next generation)
 * A dead cell with exactly three living neighbours will be brought to life (as if by reproduction)
 
 ![](https://upload.wikimedia.org/wikipedia/commons/e/e5/Gospers_glider_gun.gif)
@@ -17,9 +19,11 @@ You can play the game of life [here](https://playgameoflife.com/) or [here](http
 
 Whilst the implementation of Conway's game is rather simple in its algorithmic complexity, the difficulty of a smart contract implementation is in *storage*. The cost of storing the current the state of each step of the Game of Life on chain would be unreasonable, so we instead take advantage of _`view`_ functions to see the current state of the game (more specifcally, we will use _`pure`_ functions to view the current game state, as this function will not edit the contract state). 
 
-Let's first define the requirements for such an implementation: 
+We will set out to implement such an algorithm so as to enable the minting of an NFT which will begin with an initial seed state, and play out one tick of the Game of Life for each consecutive block since mint.
 
-1. We want this to be sharable, so let's make it an ERC721 standard. You should be able to mint a Life token to your wallet that is different from any others in existence.
+That gives us some requirements to start with: 
+
+1. We want this to be sharable and ownable, so let's make it an ERC721 standard. We should be able to mint a Life token to a wallet.
 2. Every token should be given a random initialisation
 3. The Game of Life will start on the block in which the token was minted
 4. Each consecutive block after mint will be one step in the game of life
