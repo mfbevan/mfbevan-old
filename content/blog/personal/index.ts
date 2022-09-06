@@ -1,14 +1,14 @@
-import { FaEthereum } from "react-icons/fa"
-import { IconType } from "react-icons"
+import { FaEthereum } from "react-icons/fa";
+import { IconType } from "react-icons";
 
-import Post20220821 from "./20220821.mdx"
+import Post20220821 from "./20220821.mdx";
 
 export interface IPost {
-  name: string
-  date: Date
-  summary: string
-  post(props: any): JSX.Element
-  Icon: IconType
+  name: string;
+  date: Date;
+  summary: string;
+  post(props: any): JSX.Element;
+  Icon: IconType;
 }
 
 export const personalPosts: Record<string, IPost> = {
@@ -19,4 +19,4 @@ export const personalPosts: Record<string, IPost> = {
     post: Post20220821,
     Icon: FaEthereum,
   },
-}
+};
