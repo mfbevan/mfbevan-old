@@ -4,10 +4,10 @@ import { ReactNode } from "react"
 const BlogPost = ({ children }: { children: ReactNode }) => (
   <Center pt={2} pb={10}>
     <Box
-      w={useBreakpoint()}
+      maxW="2xl"
       rounded="md"
       textAlign="left"
-      mx={2}
+      mx={4}
     >
       {children}
     </Box>
