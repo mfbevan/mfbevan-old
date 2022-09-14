@@ -1,7 +1,8 @@
-import { FaEthereum } from "react-icons/fa";
+import { FaEthereum, FaGhost } from "react-icons/fa";
 import { IconType } from "react-icons";
 
 import Post20220821 from "./20220821.mdx";
+import Post20220914 from "./20220914.mdx";
 
 export interface IPost {
   name: string;
@@ -18,5 +19,12 @@ export const personalPosts: Record<string, IPost> = {
     summary: "A bit about me, and how I got here.",
     post: Post20220821,
     Icon: FaEthereum,
+  },
+  "20220914": {
+    name: "What's in a Soul?",
+    date: new Date("14 Sep 2022"),
+    summary: "Decentralized Society: Encoding social identity in web3.",
+    post: Post20220914,
+    Icon: FaGhost,
   },
 };

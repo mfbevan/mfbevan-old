@@ -41,7 +41,7 @@ export const DesktopNav = () => {
             {navItem.children && (
               <PopoverContent
                 border={0}
-                boxShadow={"xl"}
+                boxShadow={"md"}
                 bg={popoverContentBgColor}
                 p={4}
                 rounded={"xl"}

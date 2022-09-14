@@ -10,7 +10,7 @@ const BlogPostSummary = ({ postKey, post }: { postKey: string; post: IPost }) =>
       <Link href={`/blog/${postKey}`}>
         <Box
           w={useBreakpoint()}
-          boxShadow="xl"
+          boxShadow="md"
           rounded="md"
           textAlign="left"
           mx={2}

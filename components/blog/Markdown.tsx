@@ -7,23 +7,23 @@ const sharedProps = {
 };
 
 const Blockquote = (props: PropType) => (
-  <Box pl={3} pr={2} ml={2} borderLeft="4px" borderColor="gray.300" bgColor="gray.50">
+  <Box pl={3} pr={2} ml={2} my={2} borderLeft="4px" borderColor="gray.300" bgColor="gray.50">
     <Text {...props} />
   </Box>
 );
 
 export const Markdown = {
   h1: (props: PropType) => (
-    <Heading fontSize="4xl" {...sharedProps} {...props} />
+    <Heading fontSize="3xl" fontWeight={1000}{...sharedProps} {...props} />
   ),
   h2: (props: PropType) => (
-    <Heading fontSize="3xl" {...sharedProps} {...props} />
+    <Heading fontSize="2xl" fontWeight={800} {...sharedProps} {...props} />
   ),
   h3: (props: PropType) => (
-    <Heading fontSize="2xl" {...sharedProps} {...props} />
+    <Heading fontSize="lg" {...sharedProps} {...props} />
   ),
   h4: (props: PropType) => (
-    <Heading fontSize="xl" {...sharedProps} {...props} />
+    <Heading fontSize="md" {...sharedProps} {...props} />
   ),
   p: (props: PropType) => <Text {...sharedProps} {...props} />,
   li: (props: PropType) => (
