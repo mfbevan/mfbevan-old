@@ -19,7 +19,7 @@ const SkillsCard = () => {
         maxW="2xl"
         w="full"
         bg={useColorModeValue("white", "gray.700")}
-        boxShadow="xl"
+        boxShadow="md"
         rounded="md"
         textAlign="left"
         mx={2}

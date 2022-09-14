@@ -4,7 +4,7 @@ import { ReactNode } from "react"
 const BlogPost = ({ children }: { children: ReactNode }) => (
   <Center pt={2} pb={10}>
     <Box
-      maxW="2xl"
+      w="2xl"
       rounded="md"
       textAlign="left"
       mx={4}

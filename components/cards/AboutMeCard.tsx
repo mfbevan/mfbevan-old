@@ -5,7 +5,7 @@ const AboutMeCard = () => (
     <Box
       maxW="2xl"
       w="full"
-      boxShadow="xl"
+      boxShadow="md"
       rounded="md"
       textAlign="left"
       mx={2}
