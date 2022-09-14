@@ -1,4 +1,4 @@
-import { Heading, Code, Box, Text, Link, Image } from "@chakra-ui/react";
+import { Heading, Code, Box, Text, Link, Image, useColorModeValue } from "@chakra-ui/react";
 
 type PropType = JSX.IntrinsicAttributes;
 
@@ -7,7 +7,7 @@ const sharedProps = {
 };
 
 const Blockquote = (props: PropType) => (
-  <Box pl={3} pr={2} ml={2} my={2} borderLeft="4px" borderColor="gray.300" bgColor="gray.50">
+  <Box pl={3} pr={2} ml={2} my={2} borderLeft="4px" borderColor="gray.300" bgColor={useColorModeValue("gray.50", "gray.700")}>
     <Text {...props} />
   </Box>
 );
