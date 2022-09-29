@@ -1,4 +1,5 @@
-import { FaEthereum, FaGhost } from "react-icons/fa";
+import { FaEthereum } from "react-icons/fa";
+import { GiGhostAlly } from "react-icons/gi";
 import { IconType } from "react-icons";
 
 import Post20220821 from "./20220821.mdx";
@@ -25,6 +26,6 @@ export const personalPosts: Record<string, IPost> = {
     date: new Date("14 Sep 2022"),
     summary: "Decentralized Society: Encoding social identity in web3.",
     post: Post20220914,
-    Icon: FaGhost,
+    Icon: GiGhostAlly,
   },
 };

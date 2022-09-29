@@ -1,9 +1,25 @@
-import { Box, Center, Heading, Link, useColorModeValue, Text, HStack, Spacer, useBreakpoint } from "@chakra-ui/react"
-import { IPost } from "../../content/blog/personal"
-import { BsChevronDoubleRight } from "react-icons/bs"
+import {
+  Box,
+  Center,
+  Heading,
+  Link,
+  useColorModeValue,
+  Text,
+  HStack,
+  Spacer,
+  useBreakpoint,
+} from "@chakra-ui/react";
+import { IPost } from "../../content/blog/personal";
+import { BsChevronDoubleRight } from "react-icons/bs";
 
-const BlogPostSummary = ({ postKey, post }: { postKey: string; post: IPost }) => {
-  const { name, date, summary, Icon } = post
+const BlogPostSummary = ({
+  postKey,
+  post,
+}: {
+  postKey: string;
+  post: IPost;
+}) => {
+  const { name, date, summary, Icon } = post;
 
   return (
     <Center py={2}>
@@ -18,7 +34,11 @@ const BlogPostSummary = ({ postKey, post }: { postKey: string; post: IPost }) =>
           bg={useColorModeValue("white", "gray.700")}
         >
           <HStack spacing={4}>
-            <Icon size={30} opacity="0.5" />
+            <Icon
+              size={30}
+              color="blue.800"
+              opacity="0.2"
+            />
             <Box>
               <Heading fontSize="2xl" fontWeight={500}>
                 {name}
@@ -35,7 +55,7 @@ const BlogPostSummary = ({ postKey, post }: { postKey: string; post: IPost }) =>
         </Box>
       </Link>
     </Center>
-  )
-}
+  );
+};
 
-export { BlogPostSummary }
+export { BlogPostSummary };
