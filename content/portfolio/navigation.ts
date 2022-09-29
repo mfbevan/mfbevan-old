@@ -28,20 +28,15 @@ export const navItems: Array<INavItem> = [
     ],
   },
   {
-    label: "Projects",
+    label: "Development",
     children: [
       {
-        label: "Personal Projects",
+        label: "Projects",
         subLabel: "Making and breaking things",
         href: "/projects",
       },
-    ],
-  },
-  {
-    label: "Blog",
-    children: [
       {
-        label: "Development Blog",
+        label: "Research & Development Blog",
         subLabel: "Sharing thoughts & things",
         href: "/blog"
       },
