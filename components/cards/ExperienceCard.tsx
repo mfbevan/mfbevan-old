@@ -23,6 +23,8 @@ const ExperienceCard = ({ experience }: { experience: IExperience | IProject }) 
         rounded="md"
         textAlign="left"
         mx={2}
+        border="1px solid"
+        borderColor={useColorModeValue("gray.50", "gray.700")}
       >
         <Box p={6}>
           <Stack spacing={0} align="left" mb={5}>

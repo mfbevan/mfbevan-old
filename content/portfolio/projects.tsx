@@ -1,4 +1,7 @@
-import { Link } from "@chakra-ui/react";
+import {
+  chakra,
+  Link,
+} from "@chakra-ui/react";
 import { ReactNode } from "react";
 import {
   ReactLogo,
@@ -17,14 +20,53 @@ import {
   PolygonLogo,
 } from "../../components/icons/PortfolioIcons";
 
+const StyledLink = chakra(Link, {
+  baseStyle: {
+    textDecoration: "underline",
+  },
+});
+
 export interface IProject {
-  title: string;
+  title: ReactNode;
   subtitle: string;
   desc: ReactNode;
   icons: ReactNode[];
 }
 
 export const projects: IProject[] = [
+  {
+    title: (
+      <Link href="https://www.ethdash.xyz" target="_blank">
+        ethdash.xyz
+      </Link>
+    ),
+    subtitle: "Ethereum Dashboards Aggregator",
+    desc: (
+      <>
+        All of your favourite Ethereum Dashboards in one place. Thanks to{" "}
+        <StyledLink
+          href="https://github.com/superphiz/dashboards"
+          target="_blank"
+        >
+          Superphiz
+        </StyledLink>{" "}
+        for getting this started! Check out the site at{" "}
+        <StyledLink href="https://www.ethdash.xyz" target="_blank">
+          www.ethdash.xyz
+        </StyledLink>. View the open-source repo and contribute <StyledLink href="https://github.com/mfbevan/eth-dash" target="_blank">
+          here
+        </StyledLink>
+      </>
+    ),
+    icons: [
+      <NextLogo key="next" />,
+      <ReactLogo key="react" />,
+      <ChakraUILogo key="chakra" />,
+      <GithubLogo key="github" />,
+      <VercelLogo key="vercel" />,
+      <EthereumLogo key="ethereum" />,
+    ],
+  },
   {
     title: "Scuderia",
     subtitle: "Personal Development Project @ Labrys (2022)",
@@ -33,13 +75,12 @@ export const projects: IProject[] = [
         Scuderia is a fully on-chain racing NFT ecosystem that allows minting,
         metadata and image generation, racing and betting, all running on
         Polygon. Check it out at{" "}
-        <Link
+        <StyledLink
           href="https://scuderia.mfbevan.com"
           target="_blank"
-          rel="noreferrer"
         >
           scuderia.mfbevan.com
-        </Link>{" "}
+        </StyledLink>{" "}
         or click the 🏎️ above
       </>
     ),

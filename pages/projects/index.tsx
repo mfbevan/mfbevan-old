@@ -12,8 +12,8 @@ const Experience: NextPage = () => {
         </Heading>
       </Center>
       
-      {projects.map((_exp) => (
-        <ExperienceCard key={_exp.title} experience={_exp} />
+      {projects.map((_exp, index) => (
+        <ExperienceCard key={index} experience={_exp} />
       ))}
     </>
   );
