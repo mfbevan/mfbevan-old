@@ -10,6 +10,8 @@ const AboutMeCard = () => (
       textAlign="left"
       mx={2}
       bg={useColorModeValue("white", "gray.700")}
+      border="1px solid"
+      borderColor={useColorModeValue("gray.50", "gray.700")}
     >
       <Box>
         <Text

@@ -33,6 +33,8 @@ const BlogPostSummary = ({
         mx={2}
         p={4}
         bg={useColorModeValue("white", "gray.700")}
+        border="1px solid"
+        borderColor={useColorModeValue("gray.50", "gray.700")}
       >
         <Link
           href={`/blog/${postKey}`}

@@ -24,6 +24,8 @@ const SkillsCard = () => {
         textAlign="left"
         mx={2}
         color={useColorModeValue("gray.700", "gray.300")}
+        border="1px solid"
+        borderColor={useColorModeValue("gray.50", "gray.700")}
       >
         <Box p={6}>
           <Stack spacing={0} align="left">
