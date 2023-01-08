@@ -58,10 +58,7 @@ export const projects: IProject[] = [
         <StyledLink href="https://nexeth.xyz" target="_blank">
           nexeth.xyz
         </StyledLink>
-        . View the open-source repo{" "}
-        <StyledLink href="https://github.com/mfbevan/nexeth" target="_blank">
-          here
-        </StyledLink>
+        .
       </>
     ),
     icons: [
