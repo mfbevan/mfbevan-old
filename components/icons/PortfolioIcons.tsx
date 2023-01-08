@@ -2,7 +2,12 @@
 import { Box, Tooltip, Link, Heading } from "@chakra-ui/react";
 import Image from "next/image";
 import { BsTwitter } from "react-icons/bs";
-import { githubLink, linkedInLink, rainbowMeLink, twitterLink } from "../../content/portfolio";
+import {
+  githubLink,
+  linkedInLink,
+  rainbowMeLink,
+  twitterLink,
+} from "../../content/portfolio";
 
 export const ReactLogo = () => (
   <Tooltip label="React" key="React">
@@ -592,6 +597,19 @@ export const PolygonLogo = () => (
   </Tooltip>
 );
 
+export const Auth0Logo = () => (
+  <Tooltip label="Auth 0">
+    <Box>
+      <Image
+        height={48}
+        width={48}
+        layout="fixed"
+        src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/512/external-auth0-the-solution-you-need-for-web-mobile-iot-and-internal-applications-logo-shadow-tal-revivo.png"
+      />
+    </Box>
+  </Tooltip>
+);
+
 export const RainbowLogo = () => (
   <Tooltip label="mfbevan.eth">
     <Box>
@@ -606,7 +624,7 @@ export const RainbowLogo = () => (
 );
 
 export const TwitterLinkLogo = () => (
-  <Tooltip label="mfbevan.eth" offset={[0,20]}>
+  <Tooltip label="mfbevan.eth" offset={[0, 20]}>
     <Link
       key="twitter"
       href={twitterLink}
@@ -641,7 +659,7 @@ export const RainbowLinkLogo = () => (
 );
 
 export const GithubLinkLogo = () => (
-  <Tooltip label="github/mfbevan" offset={[0,0]}>
+  <Tooltip label="github/mfbevan" offset={[0, 0]}>
     <Link
       key="mfbevan"
       href={githubLink}
@@ -670,14 +688,14 @@ export const LinkedInLinkLogo = () => (
       rel="noreferrer"
       _hover={{ textDecoration: "none" }}
     >
-    <Box pt={2} pr={1}>
-      <Image
-        height={32}
-        width={32}
-        layout="fixed"
-        src="https://img.icons8.com/fluency/288/linkedin.png"
-      />
-    </Box>
+      <Box pt={2} pr={1}>
+        <Image
+          height={32}
+          width={32}
+          layout="fixed"
+          src="https://img.icons8.com/fluency/288/linkedin.png"
+        />
+      </Box>
     </Link>
   </Tooltip>
-)
+);
