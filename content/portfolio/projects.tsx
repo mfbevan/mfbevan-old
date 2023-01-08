@@ -59,7 +59,7 @@ export const projects: IProject[] = [
           nexeth.xyz
         </StyledLink>
         . View the open-source repo{" "}
-        <StyledLink href="https://github.com/mfbevan/eth-dash" target="_blank">
+        <StyledLink href="https://github.com/mfbevan/nexeth" target="_blank">
           here
         </StyledLink>
       </>
