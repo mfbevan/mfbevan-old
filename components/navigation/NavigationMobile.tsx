@@ -1,13 +1,12 @@
 import {
-  Collapse,
   Flex,
   Icon,
-  Link,
   Stack,
   useColorModeValue,
   useDisclosure,
   Text,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import { INavItem, navItems } from "../../content/portfolio";
 
@@ -32,20 +31,20 @@ export const MobileNavItem = ({ label, children, href }: INavItem) => {
     <Stack spacing={4} onClick={children && onToggle}>
       <Flex
         py={2}
-        as={Link}
-        href={href ?? "#"}
         justify={"space-between"}
         align={"center"}
         _hover={{
           textDecoration: "none",
         }}
       >
-        <Text
-          fontWeight={600}
-          color={useColorModeValue("gray.600", "gray.200")}
-        >
-          {label}
-        </Text>
+        <Link href={href ?? ""}>
+          <Text
+            fontWeight={600}
+            color={useColorModeValue("gray.600", "gray.200")}
+          >
+            {label}
+          </Text>
+        </Link>
         {children && (
           <Icon
             as={ChevronDownIcon}
@@ -56,24 +55,6 @@ export const MobileNavItem = ({ label, children, href }: INavItem) => {
           />
         )}
       </Flex>
-
-      <Collapse in={isOpen} animateOpacity style={{ marginTop: "0!important" }}>
-        <Stack
-          mt={2}
-          pl={4}
-          borderLeft={1}
-          borderStyle={"solid"}
-          borderColor={useColorModeValue("gray.200", "gray.700")}
-          align={"start"}
-        >
-          {children &&
-            children.map((child) => (
-              <Link key={child.label} py={2} href={child.href}>
-                {child.label}
-              </Link>
-            ))}
-        </Stack>
-      </Collapse>
     </Stack>
   );
 };

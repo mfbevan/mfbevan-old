@@ -29,6 +29,7 @@ export interface IExperience {
   subtitle: string;
   desc: string;
   icons: ReactNode[];
+  image?: string;
 }
 
 export const experiences: IExperience[] = [

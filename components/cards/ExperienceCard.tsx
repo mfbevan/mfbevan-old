@@ -7,17 +7,23 @@ import {
   useColorModeValue,
   Wrap,
   WrapItem,
+  Image,
 } from "@chakra-ui/react";
 import { IExperience, IProject } from "../../content/portfolio";
 
-const ExperienceCard = ({ experience }: { experience: IExperience | IProject }) => {
-  const { title, subtitle, desc, icons } = experience;
+const ExperienceCard = ({
+  experience,
+}: {
+  experience: IExperience | IProject;
+}) => {
+  const { title, subtitle, desc, icons, image } = experience;
 
   return (
-    <Center py={2}>
+    <Center py={2} h="full">
       <Box
         maxW="2xl"
         w="full"
+        h="full"
         bg={useColorModeValue("white", "gray.700")}
         boxShadow="md"
         rounded="md"
@@ -31,17 +37,36 @@ const ExperienceCard = ({ experience }: { experience: IExperience | IProject }) 
             <Heading fontSize="xl" fontWeight={500} fontFamily="body">
               {title}
             </Heading>
-            <Text fontSize="sm" color={useColorModeValue("gray.500", "gray.400")}>
+            <Text
+              fontSize="sm"
+              color={useColorModeValue("gray.500", "gray.400")}
+              pb="10px"
+            >
               {subtitle}
             </Text>
+            {image && (
+              <Image
+                src={image}
+                alt={image}
+                h="200px"
+                objectFit="cover"
+                rounded="md"
+                boxShadow="base"
+              />
+            )}
             {icons.length ? (
               <Wrap py={4}>
                 {icons.map((_icon) => (
                   <WrapItem key={_icon!.toString()}>{_icon}</WrapItem>
                 ))}
               </Wrap>
-            ): <Box py={2} />}
-            <Text fontSize="sm" color={useColorModeValue("gray.700", "gray.200")}>
+            ) : (
+              <Box py={2} />
+            )}
+            <Text
+              fontSize="sm"
+              color={useColorModeValue("gray.700", "gray.200")}
+            >
               {desc}
             </Text>
           </Stack>
