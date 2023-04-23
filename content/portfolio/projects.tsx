@@ -34,6 +34,7 @@ export interface IProject {
   subtitle: string;
   desc: ReactNode;
   icons: ReactNode[];
+  image: string;
 }
 
 export const projects: IProject[] = [
@@ -79,6 +80,34 @@ export const projects: IProject[] = [
   // },
   {
     title: (
+      <Link href="https://www.mevwatch.info" target="_blank">
+        mevwatch.info
+      </Link>
+    ),
+    subtitle: "Ethereum MEV Dashboard",
+    desc: (
+      <>
+        Some MEV-Boost relays are regulated under OFAC and will censor certain
+        transactions. MEVWatch is a tool to monitor the current MEV landscape
+        and general network health to ensure that Ethereum remains credibly
+        neutral. Check out the site at{" "}
+        <StyledLink href="https://www.mevwatch.info" target="_blank">
+          www.mevwatch.info
+        </StyledLink>
+      </>
+    ),
+    icons: [
+      <NextLogo key="next" />,
+      <ReactLogo key="react" />,
+      <ChakraUILogo key="chakra" />,
+      <GithubLogo key="github" />,
+      <VercelLogo key="vercel" />,
+      <EthereumLogo key="ethereum" />,
+    ],
+    image: "/projects/mevwatch.png",
+  },
+  {
+    title: (
       <Link href="https://www.ethdash.xyz" target="_blank">
         ethdash.xyz
       </Link>
@@ -111,6 +140,7 @@ export const projects: IProject[] = [
       <VercelLogo key="vercel" />,
       <EthereumLogo key="ethereum" />,
     ],
+    image: "/projects/ethdash.png",
   },
   {
     title: "Scuderia",
@@ -137,6 +167,7 @@ export const projects: IProject[] = [
       <EthereumLogo key="ethereum" />,
       <PolygonLogo key="polygon" />,
     ],
+    image: "/projects/scuderia.png",
   },
   {
     title: "Portfolio",
@@ -152,25 +183,20 @@ export const projects: IProject[] = [
       <GithubLogo key="github" />,
       <VercelLogo key="vercel" />,
     ],
+    image: "/projects/mfbevan.png",
   },
   {
     title: "Bit Jump",
     subtitle: "Personal Game Project (May 2020)",
     desc: `A personal project to get a feel for the process of developing a game, right through to releasing it on the Google Play Store. Whilst the plan was never to create a hit game
-                for mobile, this project gave me a lot of experience in developing for Android devices, optimizing the mobile experience, and the specifics of deploying an application to a mobile environment.
-                Click the Play Store icon above to view the game`,
+    for mobile, this project gave me a lot of experience in developing for Android devices, optimizing the mobile experience, and the specifics of deploying an application to a mobile environment.
+    (Since removed from the Play Store)`,
     icons: [
       <UnityLogo key="unity" />,
       <AndroidLogo key="android" />,
       <CSharpLogo key="c#" />,
-      <a
-        key="playstore"
-        href="https://play.google.com/store/apps/details?id=com.RationalBitStudios.BitJump"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <PlayStoreLogo />
-      </a>,
+      <PlayStoreLogo key="play-store" />,
     ],
+    image: "/projects/bitjump.png",
   },
 ];

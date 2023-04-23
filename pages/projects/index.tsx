@@ -1,4 +1,4 @@
-import { Center, Heading } from "@chakra-ui/react";
+import { Center, Heading, Wrap, WrapItem } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import { ExperienceCard } from "../../components/cards/ExperienceCard";
 import { projects } from "../../content/portfolio";
@@ -11,10 +11,14 @@ const Experience: NextPage = () => {
           Projects
         </Heading>
       </Center>
-      
-      {projects.map((_exp, index) => (
-        <ExperienceCard key={index} experience={_exp} />
-      ))}
+
+      <Wrap justify="center">
+        {projects.map((_exp, index) => (
+          <WrapItem key={index} maxW="400px">
+            <ExperienceCard experience={_exp} />
+          </WrapItem>
+        ))}
+      </Wrap>
     </>
   );
 };
