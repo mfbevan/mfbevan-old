@@ -9,37 +9,23 @@ export const navbarTitle = "Matthew Bevan";
 export const rainbowMeLink = "https://rainbow.me/mfbevan.eth";
 export const twitterLink = "https://twitter.com/mfbevan";
 export const githubLink = "https://github.com/mfbevan";
-export const linkedInLink = "https://www.linkedin.com/in/mfbevan/"
+export const linkedInLink = "https://www.linkedin.com/in/mfbevan/";
 
 export const navItems: Array<INavItem> = [
   {
     label: "Experience",
-    children: [
-      {
-        label: "Bio & Employment History",
-        subLabel: "Professional & Educational Background",
-        href: "/experience",
-      },
-      {
-        label: "Skills",
-        subLabel: "Programming & Management Skills",
-        href: "/skills",
-      },
-    ],
+    href: "/experience",
   },
   {
-    label: "Development",
-    children: [
-      {
-        label: "Projects",
-        subLabel: "Making and breaking things",
-        href: "/projects",
-      },
-      {
-        label: "Research & Development Blog",
-        subLabel: "Sharing thoughts & things",
-        href: "/blog"
-      },
-    ],
+    label: "Skills",
+    href: "/skills",
+  },
+  {
+    label: "Projects",
+    href: "/projects",
+  },
+  {
+    label: "Development Blog",
+    href: "/blog",
   },
 ];

@@ -1,8 +1,6 @@
 import {
   Box,
-  Center,
   Heading,
-  Link,
   useColorModeValue,
   Text,
   HStack,
@@ -10,8 +8,8 @@ import {
   useBreakpoint,
   Flex,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import { IPost } from "../../content/blog/personal";
-import { BsChevronDoubleRight } from "react-icons/bs";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 
 const BlogPostSummary = ({
@@ -24,35 +22,37 @@ const BlogPostSummary = ({
   const { name, date, summary, Icon } = post;
 
   return (
-    <Center py={2}>
-      <Box
-        w={useBreakpoint()}
-        boxShadow="md"
-        rounded="md"
-        textAlign="left"
-        mx={2}
-        p={4}
-        bg={useColorModeValue("white", "gray.700")}
-        border="1px solid"
-        borderColor={useColorModeValue("gray.50", "gray.700")}
-      >
-        <Link
-          href={`/blog/${postKey}`}
+    <Box
+      w="90%"
+      minW={useBreakpoint()}
+      boxShadow="md"
+      rounded="md"
+      textAlign="left"
+      p={4}
+      bg={useColorModeValue("white", "gray.700")}
+      border="1px solid"
+      borderColor={useColorModeValue("gray.50", "gray.700")}
+    >
+      <Link href={`/blog/${postKey}`}>
+        <Flex
           role={"group"}
           display={"block"}
           p={2}
           rounded={"md"}
-          _hover={{ bg: useColorModeValue("blue.50", "gray.900") }}
+          _hover={{
+            bg: useColorModeValue("blue.50", "gray.900"),
+            cursor: "pointer",
+          }}
         >
-          <HStack align={"center"}>
-          <ChakraIcon
-                color={"blue.500"}
-                _groupHover={{ opacity: "0.6" }}
-                opacity="0.2"
-                w={7}
-                h={7}
-                as={Icon}
-              />
+          <HStack align={"center"} w="full">
+            <ChakraIcon
+              color={"blue.500"}
+              _groupHover={{ opacity: "0.6" }}
+              opacity="0.2"
+              w={7}
+              h={7}
+              as={Icon}
+            />
             <Box>
               <Heading
                 fontSize="xl"
@@ -84,9 +84,9 @@ const BlogPostSummary = ({
               />
             </Flex>
           </HStack>
-        </Link>
-      </Box>
-    </Center>
+        </Flex>
+      </Link>
+    </Box>
   );
 };
 

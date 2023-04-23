@@ -37,46 +37,46 @@ export interface IProject {
 }
 
 export const projects: IProject[] = [
-  {
-    title: (
-      <Link href="https://nexeth.xyz" target="_blank">
-        nexeth.xyz
-      </Link>
-    ),
-    subtitle: "🚧 A new tool for Solidity Solution Architecture",
-    desc: (
-      <>
-        (work-in-progress) Nexeth is a zero-code tool for designing high-level
-        Solidity Solution Architecture. The goal of this project is to develop a
-        POC that allows users to create high level interfaces in a visual editor
-        and be able to export them to code to hit the ground running with
-        Solidity smart contract development. The long-term goal of this project
-        is to create an editor for Solidity smart contracts as an education and
-        development tool to allow zero-code smart contract creation with access
-        to the full EVM feature set, as well as Live-Ops monitoring of deployed
-        smart contracts. Check it out at{" "}
-        <StyledLink href="https://nexeth.xyz" target="_blank">
-          nexeth.xyz
-        </StyledLink>
-        .
-      </>
-    ),
-    icons: [
-      <NextLogo key="next" />,
-      <ReactLogo key="react" />,
-      <ChakraUILogo key="chakra" />,
-      <GithubLogo key="github" />,
-      <VercelLogo key="vercel" />,
-      <SolidityLogo key="solidity" />,
-      <MongoDBLogo key="mongo" />,
-      <EthereumLogo key="ethereum" />,
-      <Auth0Logo key="auth-0" />,
-      <TypescriptLogo key="typescript" />,
-      <JiraLogo key="jira" />,
-      <ConfluenceLogo key="confluence" />,
-      <NodeLogo key="node" />,
-    ],
-  },
+  // {
+  //   title: (
+  //     <Link href="https://nexeth.xyz" target="_blank">
+  //       nexeth.xyz
+  //     </Link>
+  //   ),
+  //   subtitle: "🚧 A new tool for Solidity Solution Architecture",
+  //   desc: (
+  //     <>
+  //       (work-in-progress) Nexeth is a zero-code tool for designing high-level
+  //       Solidity Solution Architecture. The goal of this project is to develop a
+  //       POC that allows users to create high level interfaces in a visual editor
+  //       and be able to export them to code to hit the ground running with
+  //       Solidity smart contract development. The long-term goal of this project
+  //       is to create an editor for Solidity smart contracts as an education and
+  //       development tool to allow zero-code smart contract creation with access
+  //       to the full EVM feature set, as well as Live-Ops monitoring of deployed
+  //       smart contracts. Check it out at{" "}
+  //       <StyledLink href="https://nexeth.xyz" target="_blank">
+  //         nexeth.xyz
+  //       </StyledLink>
+  //       .
+  //     </>
+  //   ),
+  //   icons: [
+  //     <NextLogo key="next" />,
+  //     <ReactLogo key="react" />,
+  //     <ChakraUILogo key="chakra" />,
+  //     <GithubLogo key="github" />,
+  //     <VercelLogo key="vercel" />,
+  //     <SolidityLogo key="solidity" />,
+  //     <MongoDBLogo key="mongo" />,
+  //     <EthereumLogo key="ethereum" />,
+  //     <Auth0Logo key="auth-0" />,
+  //     <TypescriptLogo key="typescript" />,
+  //     <JiraLogo key="jira" />,
+  //     <ConfluenceLogo key="confluence" />,
+  //     <NodeLogo key="node" />,
+  //   ],
+  // },
   {
     title: (
       <Link href="https://www.ethdash.xyz" target="_blank">
@@ -118,8 +118,7 @@ export const projects: IProject[] = [
     desc: (
       <>
         Scuderia is a fully on-chain racing NFT ecosystem that allows minting,
-        metadata and image generation, racing and betting, all running on
-        Polygon. Check it out at{" "}
+        metadata and image generation, all running on Polygon. Check it out at{" "}
         <StyledLink href="https://scuderia.mfbevan.com" target="_blank">
           scuderia.mfbevan.com
         </StyledLink>{" "}

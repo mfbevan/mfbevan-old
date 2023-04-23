@@ -6,8 +6,8 @@ import {
   Collapse,
   useColorModeValue,
   useDisclosure,
-  Link,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { DesktopNav } from "./NavigationDesktop";
 import { MobileNav } from "./NavigationMobile";
@@ -42,22 +42,23 @@ const Navbar = () => {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Text
-            ml={{ base: "2", md: "4" }}
-            textAlign="left"
-            fontFamily={"heading"}
-            color={useColorModeValue("gray.800", "white")}
-            fontWeight="bold"
-          >
-            <Link
-              href={"/"}
+          <Link href={"/"}>
+            <Text
+              my="auto"
+              ml={{ base: "2", md: "4" }}
+              textAlign="left"
+              fontFamily={"heading"}
+              fontWeight="bold"
+              color={useColorModeValue("gray.800", "white")}
               _hover={{
                 textDecoration: "none",
+                color: "blue.400",
+                cursor: "pointer",
               }}
             >
               {navbarTitle}
-            </Link>
-          </Text>
+            </Text>
+          </Link>
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
