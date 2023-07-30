@@ -52,7 +52,7 @@ I am a software developer with a passion for programming and problem solving. Af
 <a href="https://github.com/mfbevan" target="_blank">
 <img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
 </a>
-<a href="https://twitter.com/mfbevan" target="_blank">
+<a href="https://twitter.com/0xmfbevan" target="_blank">
 <img src=https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white alt=twitter style="margin-bottom: 5px;" />
 </a>
 <a href="https://linkedin.com/in/mfbevan" target="_blank">
@@ -62,7 +62,4 @@ I am a software developer with a passion for programming and problem solving. Af
 <img src=https://img.shields.io/badge/gitlab-330F63.svg?&style=for-the-badge&logo=gitlab&logoColor=white alt=gitlab style="margin-bottom: 5px;" />
 </a>  
 </div>  
-  
-
-<br/>  
-r
+  r
