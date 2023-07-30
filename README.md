@@ -62,4 +62,3 @@ I am a software developer with a passion for programming and problem solving. Af
 <img src=https://img.shields.io/badge/gitlab-330F63.svg?&style=for-the-badge&logo=gitlab&logoColor=white alt=gitlab style="margin-bottom: 5px;" />
 </a>  
 </div>  
-  r
