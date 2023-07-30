@@ -7,7 +7,7 @@ export interface INavItem {
 
 export const navbarTitle = "Matthew Bevan";
 export const rainbowMeLink = "https://rainbow.me/mfbevan.eth";
-export const twitterLink = "https://twitter.com/mfbevan";
+export const twitterLink = "https://twitter.com/0xmfbevan";
 export const githubLink = "https://github.com/mfbevan";
 export const linkedInLink = "https://www.linkedin.com/in/mfbevan/";
 
