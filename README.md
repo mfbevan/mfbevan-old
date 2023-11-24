@@ -7,7 +7,7 @@
  |_| |_| |_|_| |_.__/ \___| \_/ \__,_|_| |_| (_)  \___|\__|_| |_|
 ```
 
-## <div align="center">Full Stack Blockchain Developer @Labrys</div>  
+## <div align="center">Senior Software Engineer @Labrys</div>  
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake-dark.svg">
