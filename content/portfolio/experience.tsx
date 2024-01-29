@@ -36,7 +36,7 @@ export const experiences: IExperience[] = [
   {
     title: "Labrys",
     subtitle: "Full-Stack Blockchain Engineer (March 2022 - NOW)",
-    desc: `At Labrys I work as a Full Stack Engineer, tackling problems in both the Web 2.0 and Web 3.0 world, 
+    desc: `At Labrys I work as a Senior Software Engineer, tackling problems in both the Web 2.0 and Web 3.0 world, 
     building web applications and smart contracts alongside some of the best developers in the crypto space today.`,
     icons: [
       <SolidityLogo key="solidity" />,

@@ -30,7 +30,7 @@ const AboutMeCard = () => (
           interest in 2021. Blockchain and the crypto space opens a world of
           opportunity for decentralisation, self-sovereign ownership and scaling
           like never before that I am passionate to be a part of since joining
-          Labrys in 2022. At Labrys I work as a Full Stack Software Developer,
+          Labrys in 2022. At Labrys I work as a Senior Software Developer,
           tackling problems in both the Web 2.0 and Web 3.0 world, building web
           applications and smart contracts alongside some of the best developers
           in the crypto space today.
