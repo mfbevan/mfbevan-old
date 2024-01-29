@@ -1,4 +1,4 @@
-import { Center, Heading } from "@chakra-ui/react";
+import { Center, Flex, Heading } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import { AboutMeCard } from "../../components/cards/AboutMeCard";
 import { ExperienceCard } from "../../components/cards/ExperienceCard";
@@ -6,7 +6,7 @@ import { education, experiences } from "../../content/portfolio";
 
 const Experience: NextPage = () => {
   return (
-    <>
+    <Flex flexDirection="column" py="80px">
       <Center py={4}>
         <Heading fontSize="2xl" fontWeight={500}>
           About Me
@@ -29,7 +29,7 @@ const Experience: NextPage = () => {
       {education.map((_exp) => (
         <ExperienceCard key={_exp.title} experience={_exp} />
       ))}
-    </>
+    </Flex>
   );
 };
 

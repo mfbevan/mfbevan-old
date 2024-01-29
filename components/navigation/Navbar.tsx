@@ -19,7 +19,7 @@ const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box>
+    <Box position="absolute" top="0" left="0" right="0">
       <Flex
         bg={useColorModeValue("white", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
@@ -30,6 +30,8 @@ const Navbar = () => {
         borderStyle={"solid"}
         borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
+        roundedBottom="2xl"
+        boxShadow="base"
       >
         <Flex display={{ base: "flex", md: "none" }}>
           <IconButton

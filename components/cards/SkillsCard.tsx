@@ -10,7 +10,11 @@ import {
   UnorderedList,
   ListItem,
 } from "@chakra-ui/react";
-import { languages, operatingSystems, toolsServices } from "../../content/portfolio";
+import {
+  languages,
+  operatingSystems,
+  toolsServices,
+} from "../../content/portfolio";
 
 const SkillsCard = () => {
   return (
@@ -20,7 +24,7 @@ const SkillsCard = () => {
         w="full"
         bg={useColorModeValue("white", "gray.700")}
         boxShadow="md"
-        rounded="md"
+        rounded="2xl"
         textAlign="left"
         mx={2}
         color={useColorModeValue("gray.700", "gray.300")}
@@ -49,13 +53,12 @@ const SkillsCard = () => {
               Highly proficient in Node & Typescript for creating front and
               backend services and deploying them to the cloud through AWS, GCP
               and Vercel. I have particular experience in RESTful API
-              development and AWS ECS workers for fast, scalable
-              infrastructure.
+              development and AWS ECS workers for fast, scalable infrastructure.
             </Text>
             <Text pb={4}>
-              In blockchain development I am able to implement, test and deploy Solidity
-              Smart Contracts for the Ethereum EVM, with testing and contract
-              interaction implemented using Hardhat and ethers.js.
+              In blockchain development I am able to implement, test and deploy
+              Solidity Smart Contracts for the Ethereum EVM, with testing and
+              contract interaction implemented using Hardhat and ethers.js.
             </Text>
 
             <Heading fontSize="lg" fontWeight={500} fontFamily="body">

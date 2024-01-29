@@ -49,7 +49,7 @@ export const personalProjects: IProject[] = [
       <>
         Create decentralised data drives and store content in them as NFTs. No
         database, no APIs.
-        <StyledLink href="https://www.mevwatch.info" target="_blank">
+        <StyledLink href="https://drive.nexeth.xyz/" target="_blank" pl="5px">
           drive.nexeth.xyz
         </StyledLink>
       </>

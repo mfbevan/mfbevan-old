@@ -9,6 +9,7 @@ import {
   Tabs,
   Wrap,
   WrapItem,
+  Flex,
 } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import { ExperienceCard } from "../../components/cards/ExperienceCard";
@@ -16,7 +17,7 @@ import { personalProjects, commercialProjects } from "../../content/portfolio";
 
 const Experience: NextPage = () => {
   return (
-    <>
+    <Flex flexDirection="column" py="80px">
       <Center py={4}>
         <Heading fontSize="2xl" fontWeight={500}>
           Projects
@@ -55,7 +56,7 @@ const Experience: NextPage = () => {
           </TabPanel>
         </TabPanels>
       </Tabs>
-    </>
+    </Flex>
   );
 };
 

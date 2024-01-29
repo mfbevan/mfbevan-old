@@ -3,16 +3,17 @@ import { useState } from "react";
 import { Box, Heading } from "@chakra-ui/react";
 import { navbarTitle } from "../../content/portfolio";
 
-const startDelay = 200;
-const typeSpeed = 45;
+const startDelay = 100;
+const typeSpeed = 30;
 const backSpeed = 20;
 const strings = ["Frontend", "Backend", "Blockchain", "Full Stack Developer"];
 const name = navbarTitle;
 
-const developerTextDelay = 1100;
+const developerTextDelay = 600;
 
 export const DeveloperTyped = () => {
   const [displaySecondLineCursor, setDisplaySecondLineCursor] = useState(false);
+
   return (
     <Box sx={{ alignItems: "center" }}>
       <Heading variant="h1" sx={{ fontSize: "5rem" }}>

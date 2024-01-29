@@ -6,7 +6,7 @@ const AboutMeCard = () => (
       maxW="2xl"
       w="full"
       boxShadow="md"
-      rounded="md"
+      rounded="2xl"
       textAlign="left"
       mx={2}
       bg={useColorModeValue("white", "gray.700")}
