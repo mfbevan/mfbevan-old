@@ -80,6 +80,33 @@ export const projects: IProject[] = [
   // },
   {
     title: (
+      <Link href="https://drive.nexeth.xyz" target="_blank">
+        IPFS Drive
+      </Link>
+    ),
+    subtitle: "IPFS Drive",
+    desc: (
+      <>
+        Create decentralised data drives and store content in them as NFTs. No
+        database, no APIs.
+        <StyledLink href="https://www.mevwatch.info" target="_blank">
+          drive.nexeth.xyz
+        </StyledLink>
+      </>
+    ),
+    icons: [
+      <NextLogo key="next" />,
+      <ReactLogo key="react" />,
+      <ChakraUILogo key="chakra" />,
+      <GithubLogo key="github" />,
+      <VercelLogo key="vercel" />,
+      <EthereumLogo key="ethereum" />,
+      <SolidityLogo key="solidity" />,
+    ],
+    image: "/projects/drive.jpeg",
+  },
+  {
+    title: (
       <Link href="https://www.mevwatch.info" target="_blank">
         mevwatch.info
       </Link>
