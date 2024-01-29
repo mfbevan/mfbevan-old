@@ -39,6 +39,28 @@ export interface IProject {
 
 export const personalProjects: IProject[] = [
   {
+    title: "Web3 App Store",
+    subtitle: "🚧 (WIP) Marketplace for Web3 apps and PWAs",
+    desc: (
+      <>
+        A marketplace for Web3 apps and PWAs. Built with Next.js, Chakra UI,
+        currently in development.
+        <StyledLink href="https://development.app.nexeth.xyz/store?tab=%22categories%22">
+          development.app.nexeth.xyz
+        </StyledLink>
+      </>
+    ),
+    icons: [
+      <NextLogo key="next" />,
+      <ReactLogo key="react" />,
+      <ChakraUILogo key="chakra" />,
+      <GithubLogo key="github" />,
+      <VercelLogo key="vercel" />,
+      <EthereumLogo key="ethereum" />,
+    ],
+    image: "/projects/webapp-store.png",
+  },
+  {
     title: (
       <Link href="https://drive.nexeth.xyz" target="_blank">
         IPFS Drive
