@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import { Box, Tooltip, Link, Heading } from "@chakra-ui/react";
+import { Box, Tooltip, Link, Heading, Flex } from "@chakra-ui/react";
 import Image from "next/image";
 import { BsTwitter } from "react-icons/bs";
 import {
@@ -9,12 +9,14 @@ import {
   twitterLink,
 } from "../../content/portfolio";
 
+const ICON_SIZE = 32;
+
 export const ReactLogo = () => (
   <Tooltip label="React" key="React">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/office/144/000000/react.png"
       />
@@ -26,8 +28,8 @@ export const TypescriptLogo = () => (
   <Tooltip label="Typescript">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/color/144/000000/typescript.png"
       />
@@ -39,8 +41,8 @@ export const TerraformLogo = () => (
   <Tooltip label="Terraform">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/fluency/144/000000/terraform.png"
       />
@@ -52,8 +54,8 @@ export const NodeLogo = () => (
   <Tooltip label="Node.js">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/color/144/000000/nodejs.png"
       />
@@ -65,8 +67,8 @@ export const GithubLogo = () => (
   <Tooltip label="Github">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/fluency/144/000000/github.png"
       />
@@ -78,8 +80,8 @@ export const GithubLogo64 = () => (
   <Tooltip label="Github">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/nolan/64/github.png"
       />
@@ -91,8 +93,8 @@ export const GitlabLogo = () => (
   <Tooltip label="GitLab">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/color/144/000000/gitlab.png"
       />
@@ -104,8 +106,8 @@ export const JiraLogo = () => (
   <Tooltip label="Jira">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/color/144/000000/jira.png"
       />
@@ -117,8 +119,8 @@ export const PythonLogo = () => (
   <Tooltip label="Python">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/color/144/000000/python--v1.png"
       />
@@ -130,8 +132,8 @@ export const AWSLogo = () => (
   <Tooltip label="AWS">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/color/144/000000/amazon-web-services.png"
       />
@@ -143,8 +145,8 @@ export const AzureLogo = () => (
   <Tooltip label="Azure">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/color/144/000000/azure-1.png"
       />
@@ -156,8 +158,8 @@ export const PostgresLogo = () => (
   <Tooltip label="PostgreSQL">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/color/144/000000/postgreesql.png"
       />
@@ -169,8 +171,8 @@ export const MariaDbLogo = () => (
   <Tooltip label="MariaDB">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/color/144/000000/maria-db.png"
       />
@@ -182,8 +184,8 @@ export const UnityLogo = () => (
   <Tooltip label="Unity">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/ios-filled/50/000000/unity.png"
       />
@@ -195,8 +197,8 @@ export const AndroidLogo = () => (
   <Tooltip label="Android">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/color/144/000000/android-os.png"
       />
@@ -208,8 +210,8 @@ export const CSharpLogo = () => (
   <Tooltip label="C#">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/color/144/000000/c-sharp-logo.png"
       />
@@ -221,8 +223,8 @@ export const PlayStoreLogo = () => (
   <Tooltip label="PlayStore">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/color/144/000000/google-play.png"
       />
@@ -234,8 +236,8 @@ export const MUILogo = () => (
   <Tooltip label="Material UI">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/color/144/000000/material-ui.png"
       />
@@ -247,8 +249,8 @@ export const InvestmentLogo = () => (
   <Tooltip label="Day Trading">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/external-becris-flat-becris/64/000000/external-portfolio-business-management-becris-flat-becris.png"
       />
@@ -260,8 +262,8 @@ export const SolanaLogo = () => (
   <Tooltip label="Solana">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://cryptologos.cc/logos/solana-sol-logo.png"
       />
@@ -273,8 +275,8 @@ export const BitcoinLogo = () => (
   <Tooltip label="Bitcoin">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/stickers/100/000000/bitcoin.png"
       />
@@ -286,8 +288,8 @@ export const EthereumLogo = () => (
   <Tooltip label="Ethereum">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/fluency/144/000000/ethereum.png"
       />
@@ -299,8 +301,8 @@ export const LinkedInLogo = () => (
   <Tooltip label="LinkedIn">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/cute-clipart/128/linkedin.png"
       />
@@ -312,8 +314,8 @@ export const DockerLogo = () => (
   <Tooltip label="Docker">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/color/144/000000/docker.png"
       />
@@ -325,8 +327,8 @@ export const CloudflareLogo = () => (
   <Tooltip label="Cloudflare">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/color/144/000000/cloudflare.png"
       />
@@ -338,8 +340,8 @@ export const WindowsLogo = () => (
   <Tooltip label="Windows">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/fluency/144/000000/windows-10.png"
       />
@@ -351,8 +353,8 @@ export const MacOSLogo = () => (
   <Tooltip label="Mac OSX">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/color/144/000000/mac-os-logo.png"
       />
@@ -364,8 +366,8 @@ export const LinuxLogo = () => (
   <Tooltip label="Linux">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/color/144/000000/linux--v1.png"
       />
@@ -377,8 +379,8 @@ export const HTMLLogo = () => (
   <Tooltip label="HTML">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/color/144/000000/html-5--v1.png"
       />
@@ -390,8 +392,8 @@ export const CSSLogo = () => (
   <Tooltip label="CSS">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/color/144/000000/css3.png"
       />
@@ -403,8 +405,8 @@ export const JavascriptLogo = () => (
   <Tooltip label="Javascript">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/color/144/000000/javascript--v2.png"
       />
@@ -416,8 +418,8 @@ export const ConfluenceLogo = () => (
   <Tooltip label="Confluence">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/fluency/144/000000/confluence.png"
       />
@@ -429,8 +431,8 @@ export const JavaLogo = () => (
   <Tooltip label="Java">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/material-outlined/144/000000/java-coffee-cup-logo.png"
       />
@@ -442,8 +444,8 @@ export const SolidityLogo = () => (
   <Tooltip label="Solidity">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/ios-filled/50/000000/solidity.png"
       />
@@ -455,8 +457,8 @@ export const MatlabLogo = () => (
   <Tooltip label="Matlab">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/fluency/144/000000/matlab.png"
       />
@@ -468,8 +470,8 @@ export const ElrondLogo = () => (
   <Tooltip label="Elrond">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://assets.coingecko.com/coins/images/12335/large/elrond3_360.png?1626341589"
       />
@@ -481,8 +483,8 @@ export const TwitterLogo = () => (
   <Tooltip label="mfbevan">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/color/64/twitter--v1.png"
       />
@@ -494,8 +496,8 @@ export const KubernetesLogo = () => (
   <Tooltip label="Kubernetes">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/color/288/kubernetes.png"
       />
@@ -507,8 +509,8 @@ export const MongoDBLogo = () => (
   <Tooltip label="MongoDB">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/color/288/mongodb.png"
       />
@@ -520,8 +522,8 @@ export const ChakraUILogo = () => (
   <Tooltip label="ChakraUI">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/color/288/chakra-ui.png"
       />
@@ -533,8 +535,8 @@ export const HardhatLogo = () => (
   <Tooltip label="Hardhat">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://plugins.jetbrains.com/files/18551/202687/icon/pluginIcon.png"
       />
@@ -544,27 +546,27 @@ export const HardhatLogo = () => (
 
 export const VercelLogo = () => (
   <Tooltip label="Vercel">
-    <Box p={2}>
+    <Flex alignItems="center">
       <Image
-        height={32}
-        width={32}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://svgrepo.com/show/327408/logo-vercel.svg"
       />
-    </Box>
+    </Flex>
   </Tooltip>
 );
 
 export const NextLogo = () => (
   <Tooltip label="Next.js">
-    <Box p={2}>
+    <Flex alignItems="center">
       <Image
-        height={32}
-        width={32}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://iconape.com/wp-content/files/gm/82643/svg/next-js.svg"
       />
-    </Box>
+    </Flex>
   </Tooltip>
 );
 
@@ -588,8 +590,8 @@ export const PolygonLogo = () => (
   <Tooltip label="Polygon">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/external-black-fill-lafs/344/external-Polygon-cryptocurrency-black-fill-lafs.png"
       />
@@ -601,8 +603,8 @@ export const Auth0Logo = () => (
   <Tooltip label="Auth 0">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/512/external-auth0-the-solution-you-need-for-web-mobile-iot-and-internal-applications-logo-shadow-tal-revivo.png"
       />
@@ -614,8 +616,8 @@ export const RainbowLogo = () => (
   <Tooltip label="mfbevan.eth">
     <Box>
       <Image
-        height={48}
-        width={48}
+        height={ICON_SIZE}
+        width={ICON_SIZE}
         layout="fixed"
         src="https://www.rainbowkit.com/_next/image?url=%2Frainbow-logo.png&w=96&q=75"
       />
@@ -669,8 +671,8 @@ export const GithubLinkLogo = () => (
     >
       <Box pt={2}>
         <Image
-          height={48}
-          width={48}
+          height={ICON_SIZE}
+          width={ICON_SIZE}
           layout="fixed"
           src="https://img.icons8.com/bubbles/200/github.png"
         />
