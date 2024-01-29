@@ -13,7 +13,13 @@ export const LandingImage = () => {
   const top = useBreakpointValue({ base: "20%", md: "35%" });
 
   return (
-    <Box sx={{ width: "100%", height: "95vh", position: "fixed" }}>
+    <Box
+      sx={{
+        width: "100vw",
+        height: "100vh",
+        zIndex: 100,
+      }}
+    >
       <Image
         layout="fill"
         objectFit="cover"
@@ -30,6 +36,7 @@ export const LandingImage = () => {
             color: "white",
             left: "50%",
             transform: "translateX(-50%)",
+            zIndex: 1,
           }}
         >
           <DeveloperTyped />

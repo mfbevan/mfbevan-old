@@ -10,6 +10,7 @@ export const ColorModeToggle = (props: ButtonProps) => {
       _focus={{ boxShadow: "none" }}
       w="fit-content"
       h="48px"
+      rounded="2xl"
       {...props}
     >
       {colorMode === "light" ? <BsMoonStarsFill /> : <BsSun />}

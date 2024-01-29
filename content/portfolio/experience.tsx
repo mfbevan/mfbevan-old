@@ -36,7 +36,7 @@ export const experiences: IExperience[] = [
   {
     title: "Labrys",
     subtitle: "Full-Stack Blockchain Engineer (March 2022 - NOW)",
-    desc: `At Labrys I work as a Full Stack Engineer, tackling problems in both the Web 2.0 and Web 3.0 world, 
+    desc: `At Labrys I work as a Senior Software Engineer, tackling problems in both the Web 2.0 and Web 3.0 world, 
     building web applications and smart contracts alongside some of the best developers in the crypto space today.`,
     icons: [
       <SolidityLogo key="solidity" />,
@@ -80,22 +80,6 @@ export const experiences: IExperience[] = [
     ],
   },
   {
-    title: `Hogan's Wellington Point Hotel`,
-    subtitle: "Duty Manager (2018 - 2021)",
-    desc: `Bar management, financial management, event planning, overseeing
-  of daily operations, administration, security, customer service, excellent time management & communication, conflict resolution skills`,
-    icons: [],
-  },
-];
-
-export const education: IExperience[] = [
-  {
-    title: "Bachelor Information Technology - Computer Science",
-    subtitle: "Queensland University Technology (2018-2021) GPA 6.81",
-    desc: "Building IT Systems, Database Management, Impact of IT, Computer Technology Fundamentals, Programming Principles, IT Systems Design, Information Security, Networks, Discrete Structures, Software Development, Cloud Computing, IT Project Management, Algorithms and Complexity, Cryptography, Systems Programming, Energy in Engineering, Sustainability and Professional Practice, Engineering Computation, Microprocessors and Digital Systems, Engineering Design, Engineering Mechanics, Electrical Engineering Foundations, Signals Analysis, Linear Algebra, Dynamics, Control and Dynamic Systems, Dynamics of Machines, Mechatronics Design",
-    icons: [],
-  },
-  {
     title: "Foundation Society",
     subtitle:
       "Full-Stack Development - University Capstone Project (March 2021 - November 2021)",
@@ -110,5 +94,21 @@ export const education: IExperience[] = [
       <MariaDbLogo key="mariadb" />,
       <MUILogo key="mui" />,
     ],
+  },
+  {
+    title: `Hogan's Wellington Point Hotel`,
+    subtitle: "Duty Manager (2018 - 2021)",
+    desc: `Bar management, financial management, event planning, overseeing
+  of daily operations, administration, security, customer service, excellent time management & communication, conflict resolution skills`,
+    icons: [],
+  },
+];
+
+export const education: IExperience[] = [
+  {
+    title: "Bachelor Information Technology - Computer Science",
+    subtitle: "Queensland University Technology (2018-2021) GPA 6.81",
+    desc: "Building IT Systems, Database Management, Impact of IT, Computer Technology Fundamentals, Programming Principles, IT Systems Design, Information Security, Networks, Discrete Structures, Software Development, Cloud Computing, IT Project Management, Algorithms and Complexity, Cryptography, Systems Programming, Energy in Engineering, Sustainability and Professional Practice, Engineering Computation, Microprocessors and Digital Systems, Engineering Design, Engineering Mechanics, Electrical Engineering Foundations, Signals Analysis, Linear Algebra, Dynamics, Control and Dynamic Systems, Dynamics of Machines, Mechatronics Design",
+    icons: [],
   },
 ];
