@@ -37,54 +37,14 @@ export interface IProject {
   image: string;
 }
 
-export const projects: IProject[] = [
-  // {
-  //   title: (
-  //     <Link href="https://nexeth.xyz" target="_blank">
-  //       nexeth.xyz
-  //     </Link>
-  //   ),
-  //   subtitle: "🚧 A new tool for Solidity Solution Architecture",
-  //   desc: (
-  //     <>
-  //       (work-in-progress) Nexeth is a zero-code tool for designing high-level
-  //       Solidity Solution Architecture. The goal of this project is to develop a
-  //       POC that allows users to create high level interfaces in a visual editor
-  //       and be able to export them to code to hit the ground running with
-  //       Solidity smart contract development. The long-term goal of this project
-  //       is to create an editor for Solidity smart contracts as an education and
-  //       development tool to allow zero-code smart contract creation with access
-  //       to the full EVM feature set, as well as Live-Ops monitoring of deployed
-  //       smart contracts. Check it out at{" "}
-  //       <StyledLink href="https://nexeth.xyz" target="_blank">
-  //         nexeth.xyz
-  //       </StyledLink>
-  //       .
-  //     </>
-  //   ),
-  //   icons: [
-  //     <NextLogo key="next" />,
-  //     <ReactLogo key="react" />,
-  //     <ChakraUILogo key="chakra" />,
-  //     <GithubLogo key="github" />,
-  //     <VercelLogo key="vercel" />,
-  //     <SolidityLogo key="solidity" />,
-  //     <MongoDBLogo key="mongo" />,
-  //     <EthereumLogo key="ethereum" />,
-  //     <Auth0Logo key="auth-0" />,
-  //     <TypescriptLogo key="typescript" />,
-  //     <JiraLogo key="jira" />,
-  //     <ConfluenceLogo key="confluence" />,
-  //     <NodeLogo key="node" />,
-  //   ],
-  // },
+export const personalProjects: IProject[] = [
   {
     title: (
       <Link href="https://drive.nexeth.xyz" target="_blank">
         IPFS Drive
       </Link>
     ),
-    subtitle: "IPFS Drive",
+    subtitle: "Decentralised File Storage Solution",
     desc: (
       <>
         Create decentralised data drives and store content in them as NFTs. No
@@ -104,34 +64,6 @@ export const projects: IProject[] = [
       <SolidityLogo key="solidity" />,
     ],
     image: "/projects/drive.jpeg",
-  },
-  {
-    title: (
-      <Link href="https://www.mevwatch.info" target="_blank">
-        mevwatch.info
-      </Link>
-    ),
-    subtitle: "Ethereum MEV Dashboard",
-    desc: (
-      <>
-        Some MEV-Boost relays are regulated under OFAC and will censor certain
-        transactions. MEVWatch is a tool to monitor the current MEV landscape
-        and general network health to ensure that Ethereum remains credibly
-        neutral. Check out the site at{" "}
-        <StyledLink href="https://www.mevwatch.info" target="_blank">
-          www.mevwatch.info
-        </StyledLink>
-      </>
-    ),
-    icons: [
-      <NextLogo key="next" />,
-      <ReactLogo key="react" />,
-      <ChakraUILogo key="chakra" />,
-      <GithubLogo key="github" />,
-      <VercelLogo key="vercel" />,
-      <EthereumLogo key="ethereum" />,
-    ],
-    image: "/projects/mevwatch.png",
   },
   {
     title: (
@@ -225,5 +157,36 @@ export const projects: IProject[] = [
       <PlayStoreLogo key="play-store" />,
     ],
     image: "/projects/bitjump.png",
+  },
+];
+
+export const commercialProjects: IProject[] = [
+  {
+    title: (
+      <Link href="https://www.mevwatch.info" target="_blank">
+        mevwatch.info
+      </Link>
+    ),
+    subtitle: "Ethereum MEV Dashboard",
+    desc: (
+      <>
+        Some MEV-Boost relays are regulated under OFAC and will censor certain
+        transactions. MEVWatch is a tool to monitor the current MEV landscape
+        and general network health to ensure that Ethereum remains credibly
+        neutral. Check out the site at{" "}
+        <StyledLink href="https://www.mevwatch.info" target="_blank">
+          www.mevwatch.info
+        </StyledLink>
+      </>
+    ),
+    icons: [
+      <NextLogo key="next" />,
+      <ReactLogo key="react" />,
+      <ChakraUILogo key="chakra" />,
+      <GithubLogo key="github" />,
+      <VercelLogo key="vercel" />,
+      <EthereumLogo key="ethereum" />,
+    ],
+    image: "/projects/mevwatch.png",
   },
 ];
