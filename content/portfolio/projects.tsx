@@ -38,27 +38,44 @@ export interface IProject {
 }
 
 export const personalProjects: IProject[] = [
+  // {
+  //   title: "Web3 App Store",
+  //   subtitle: "🚧 (WIP) Marketplace for Web3 apps and PWAs",
+  //   desc: (
+  //     <>
+  //       A marketplace for Web3 apps and PWAs. Built with Next.js, Chakra UI,
+  //       currently in development.
+  //       <StyledLink href="https://development.app.nexeth.xyz/store?tab=%22categories%22">
+  //         development.app.nexeth.xyz
+  //       </StyledLink>
+  //     </>
+  //   ),
+  //   icons: [
+  //     <NextLogo key="next" />,
+  //     <ReactLogo key="react" />,
+  //     <ChakraUILogo key="chakra" />,
+  //     <GithubLogo key="github" />,
+  //     <VercelLogo key="vercel" />,
+  //     <EthereumLogo key="ethereum" />,
+  //   ],
+  //   image: "/projects/webapp-store.png",
+  // },
   {
-    title: "Web3 App Store",
-    subtitle: "🚧 (WIP) Marketplace for Web3 apps and PWAs",
-    desc: (
-      <>
-        A marketplace for Web3 apps and PWAs. Built with Next.js, Chakra UI,
-        currently in development.
-        <StyledLink href="https://development.app.nexeth.xyz/store?tab=%22categories%22">
-          development.app.nexeth.xyz
-        </StyledLink>
-      </>
+    title: (
+      <Link
+        href="https://www.npmjs.com/package/@nexeth/heimdall"
+        target="_blank"
+      >
+        @nexeth/heimdall
+      </Link>
     ),
+    subtitle: "Ethereum Block Listening SDK",
+    desc: "Heimdall is a powerful tool designed to abstract the complexity of listening to blockchain events on Ethereum, built on top of viem. It allows for easy monitoring of blocks, transactions, transaction hashes, and transaction receipts, providing a simplified interface for interaction with the Ethereum blockchain",
     icons: [
-      <NextLogo key="next" />,
-      <ReactLogo key="react" />,
-      <ChakraUILogo key="chakra" />,
-      <GithubLogo key="github" />,
-      <VercelLogo key="vercel" />,
       <EthereumLogo key="ethereum" />,
+      <TypescriptLogo key="typescript" />,
     ],
-    image: "/projects/webapp-store.png",
+    image: "/projects/heimdall.png",
   },
   {
     title: (
@@ -210,5 +227,25 @@ export const commercialProjects: IProject[] = [
       <EthereumLogo key="ethereum" />,
     ],
     image: "/projects/mevwatch.png",
+  },
+  {
+    title: (
+      <Link href="https://beta.polyone.io" target="_blank">
+        PolyOne.io
+      </Link>
+    ),
+    subtitle: "Ethereum NFT Marketplace",
+    desc: (
+      <>
+        A creator focused primary and secondary Sale NFT Marketplace running on
+        Ethereum Mainnet. Users can deploy individual NFT collections via a
+        Manifold proxy integration and list their tokens in the PolyOne
+        marketplace. For this project I developed the Smart Contracts, frontend
+        and backend to faciliate contract creation, listing and purchasing of
+        tokens.
+      </>
+    ),
+    icons: [],
+    image: "projects/polyone.png",
   },
 ];
