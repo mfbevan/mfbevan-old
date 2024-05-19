@@ -38,28 +38,38 @@ export interface IProject {
 }
 
 export const personalProjects: IProject[] = [
-  // {
-  //   title: "Web3 App Store",
-  //   subtitle: "🚧 (WIP) Marketplace for Web3 apps and PWAs",
-  //   desc: (
-  //     <>
-  //       A marketplace for Web3 apps and PWAs. Built with Next.js, Chakra UI,
-  //       currently in development.
-  //       <StyledLink href="https://development.app.nexeth.xyz/store?tab=%22categories%22">
-  //         development.app.nexeth.xyz
-  //       </StyledLink>
-  //     </>
-  //   ),
-  //   icons: [
-  //     <NextLogo key="next" />,
-  //     <ReactLogo key="react" />,
-  //     <ChakraUILogo key="chakra" />,
-  //     <GithubLogo key="github" />,
-  //     <VercelLogo key="vercel" />,
-  //     <EthereumLogo key="ethereum" />,
-  //   ],
-  //   image: "/projects/webapp-store.png",
-  // },
+  {
+    title: (
+      <Link href="https://explorer.nexeth.xyz" target="_blank">
+        Nexeth Explorer
+      </Link>
+    ),
+    subtitle: "Blockchain Explorer. ⚡️ Supercharged ⚡️.",
+    desc: (
+      <>
+        Nexeth unifies your search across Ethereum and L2s (including testnets).
+        Explore networks, tokens, NFTs, and transactions – all from a single
+        powerful interface. If you prefer Etherscan or BlockScout, you are only
+        a click away via a search command.
+        <StyledLink
+          href="https://explorer.nexeth.xyz/"
+          target="_blank"
+          pl="5px"
+        >
+          explorer.nexeth.xyz
+        </StyledLink>
+      </>
+    ),
+    icons: [
+      <NextLogo key="next" />,
+      <ReactLogo key="react" />,
+      <GithubLogo key="github" />,
+      <VercelLogo key="vercel" />,
+      <EthereumLogo key="ethereum" />,
+      <SolidityLogo key="solidity" />,
+    ],
+    image: "/projects/nexeth.png",
+  },
   {
     title: (
       <Link
@@ -77,33 +87,33 @@ export const personalProjects: IProject[] = [
     ],
     image: "/projects/heimdall.png",
   },
-  {
-    title: (
-      <Link href="https://drive.nexeth.xyz" target="_blank">
-        IPFS Drive
-      </Link>
-    ),
-    subtitle: "Decentralised File Storage Solution",
-    desc: (
-      <>
-        Create decentralised data drives and store content in them as NFTs. No
-        database, no APIs.
-        <StyledLink href="https://drive.nexeth.xyz/" target="_blank" pl="5px">
-          drive.nexeth.xyz
-        </StyledLink>
-      </>
-    ),
-    icons: [
-      <NextLogo key="next" />,
-      <ReactLogo key="react" />,
-      <ChakraUILogo key="chakra" />,
-      <GithubLogo key="github" />,
-      <VercelLogo key="vercel" />,
-      <EthereumLogo key="ethereum" />,
-      <SolidityLogo key="solidity" />,
-    ],
-    image: "/projects/drive.jpeg",
-  },
+  // {
+  //   title: (
+  //     <Link href="https://drive.nexeth.xyz" target="_blank">
+  //       IPFS Drive
+  //     </Link>
+  //   ),
+  //   subtitle: "Decentralised File Storage Solution",
+  //   desc: (
+  //     <>
+  //       Create decentralised data drives and store content in them as NFTs. No
+  //       database, no APIs.
+  //       <StyledLink href="https://drive.nexeth.xyz/" target="_blank" pl="5px">
+  //         drive.nexeth.xyz
+  //       </StyledLink>
+  //     </>
+  //   ),
+  //   icons: [
+  //     <NextLogo key="next" />,
+  //     <ReactLogo key="react" />,
+  //     <ChakraUILogo key="chakra" />,
+  //     <GithubLogo key="github" />,
+  //     <VercelLogo key="vercel" />,
+  //     <EthereumLogo key="ethereum" />,
+  //     <SolidityLogo key="solidity" />,
+  //   ],
+  //   image: "/projects/drive.jpeg",
+  // },
   {
     title: (
       <Link href="https://www.ethdash.xyz" target="_blank">
